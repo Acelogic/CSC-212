@@ -1,2 +1,2 @@
-# CSC212
+# CSC-212
 Principals of Programming Course Work
