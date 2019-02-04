@@ -1,12 +1,13 @@
 body {
-    background-color: black; 
+    background-image: url(wp.png);
+    background-repeat: no-repeat;
     font-family: serif;
     font-size: large;
     color: white;
 }
 
-a:link {color: pink;}
-a:visited {color: yellow;}
+a:link {color: yellow;}
+a:visited {color: pink;}
 a:hover {color: #6600CC;}
 a:active {color: 6600CC;}
 
