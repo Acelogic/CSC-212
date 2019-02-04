@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93a8d450-42c1-4796-9150-761187c30f37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/SimplePainter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mmw/BasicsListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mmw/Dorothy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mmw/Melody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/npw/BlueDot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/npw/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/.idea/libraries/SimplePainter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/CS1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/src/greetings/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/src/greetings/HelloYou.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/src/mmw/BasicsListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/src/mmw/Dorothy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/src/mmw/Melody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/src/npw/BlueDot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS1/src/npw/Target.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,6 +25,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="PRINT_LINE_NUMBERS" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../CS1\exportToHTML" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -35,14 +49,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/npw/Target.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            <state relative-caret-position="93">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
+                <element signature="e#0#1064#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,14 +71,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/npw/BlueDot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            <state relative-caret-position="355">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +119,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -121,15 +130,15 @@
         <option value="$PROJECT_DIR$/src/mmw/BasicsListener.java" />
         <option value="$PROJECT_DIR$/src/mmw/Dorothy.java" />
         <option value="$PROJECT_DIR$/src/mmw/Melody.java" />
-        <option value="$PROJECT_DIR$/src/npw/BlueDot.java" />
         <option value="$PROJECT_DIR$/src/npw/Target.java" />
+        <option value="$PROJECT_DIR$/src/npw/BlueDot.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-10" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -137,22 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CS1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -180,10 +173,26 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CS1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549308317556" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549314113978" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/jfugue-4.0.3-with-musicxml.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -202,13 +211,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HelloYou">
-    <configuration name="Dorothy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mmw.Dorothy" />
+  <component name="RunManager" selected="Application.HelloWorld">
+    <configuration name="BlueDot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="npw.BlueDot" />
       <module name="CS1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mmw.*" />
+          <option name="PATTERN" value="npw.Target" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -260,7 +269,7 @@
       <module name="CS1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="npw.*" />
+          <option name="PATTERN" value="npw.Target" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -270,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloYou" />
         <item itemvalue="Application.HelloWorld" />
-        <item itemvalue="Application.Target" />
+        <item itemvalue="Application.BlueDot" />
+        <item itemvalue="Application.TargetRed" />
+        <item itemvalue="Application.HelloYou" />
         <item itemvalue="Application.Melody" />
-        <item itemvalue="Application.Dorothy" />
       </list>
     </recent_temporary>
   </component>
@@ -293,9 +302,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12751678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -304,7 +312,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -312,7 +320,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -347,13 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmw/BasicsListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mmw/Dorothy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -368,30 +369,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/npw/Target.java">
+    <entry file="file://$PROJECT_DIR$/src/mmw/BasicsListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/npw/Target.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
+            <element signature="e#0#1064#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/npw/BlueDot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        <state relative-caret-position="355">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
           </folding>
         </state>
       </provider>
