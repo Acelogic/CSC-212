@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SimplePainter">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/SimplePainter.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
