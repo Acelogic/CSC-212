@@ -21,7 +21,7 @@ public class ShapesThing {
         SPainter paintBrush = new SPainter("idk",800,800);
         paintBrush.setRandomColor();
         paintBrush.paint(square);
-        paintBrush.paint(disk);
+        paintBrush.draw(disk);
         paintBrush.setColor(Color.BLUE);
         paintBrush.paint(diamond);
     }

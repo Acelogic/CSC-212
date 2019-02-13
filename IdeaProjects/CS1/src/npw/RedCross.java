@@ -9,8 +9,6 @@ import java.awt.Color;
 
 public class RedCross {
 
-
-
     private void paintTheImage() {
         SPainter paintBrush = new SPainter("Red Cross",600,600);
         SRectangle rectangle = new SRectangle(500,100);

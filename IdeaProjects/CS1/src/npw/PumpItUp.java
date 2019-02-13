@@ -61,10 +61,11 @@ public class PumpItUp {
         painter.paint(square);
         painter.moveToCenter();
     }
+
     private void paintTheImage() {
         SPainter painter = new SPainter("PumpItUp",600,600);
         SSquare square = new SSquare(150);
-        paintYellowSquare(painter,square);
+        paintYellowSquare (painter,square);
         paintRedSquares(painter,square);
         paintBlueSquares(painter,square);
         paintGraySquares(painter,square);

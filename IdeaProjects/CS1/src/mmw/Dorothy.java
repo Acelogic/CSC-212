@@ -17,5 +17,5 @@ public class Dorothy {
         note.rp(); note.play();
         System.out.println();
         System.out.println("The Tune is Somewhere Over the Rainbow from Wizard of Oz 😎");
-    }
+}
 }
