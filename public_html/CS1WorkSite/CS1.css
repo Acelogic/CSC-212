@@ -1,5 +1,5 @@
 body {
-    background-image: url(wp.png);
+    background-image: url(../wp.png);
     background-repeat: no-repeat;
     font-family: serif;
     font-size: large;
@@ -14,7 +14,7 @@ a:active {color: 6600CC;}
 em {
     font-weight: bold;
     font-style: normal;
-    color: white;
+    color: black;
 }
 
 h1 {
@@ -40,8 +40,8 @@ h5 {
 }
 
 div.block {
-    border-left: 1px solid white;
-    border-top: 1px solid white;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
     padding-left: 20px;
     padding-bottom: 5px;
     padding-right: 20px;
@@ -49,8 +49,8 @@ div.block {
 }
 
 div.zblock {
-    border-left: 0px solid white;
-    border-top: 0px solid white;
+    border-left: 0px solid black;
+    border-top: 0px solid black;
     padding-left: 20px;
     padding-bottom: 5px;
     padding-right: 20px;
@@ -58,8 +58,8 @@ div.zblock {
 }
 
 div.iblock {
-    border-left: 1px solid white;
-    border-top: 1px solid white;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
     padding-left: 20px;
     padding-bottom: 5px;
     padding-right: 20px;
@@ -68,8 +68,8 @@ div.iblock {
 }
 
 div.hblock {
-    border-left: 0px solid white;
-    border-top: 0px solid white;
+    border-left: 0px solid black;
+    border-top: 0px solid black;
     padding-left: 0px;
     padding-bottom: 0px;
     padding-right: 20px;
@@ -78,8 +78,8 @@ div.hblock {
 }
 
 div.innerblock {
-    border-left: 1px solid white;
-    border-top: 1px solid white;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
     padding-left: 0px;
     padding-bottom: 5px;
     padding-right: 0px;
@@ -89,8 +89,8 @@ div.innerblock {
 }
 
 div.codeblock {
-    border-left: 1px solid white;
-    border-top: 1px solid white;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
     padding-left: 20px;
     padding-bottom: 5px;
     padding-right: 0px;
@@ -100,8 +100,8 @@ div.codeblock {
 }
 
 div.simpleblock {
-    border-left: 0px solid white;
-    border-top: 0px solid white;
+    border-left: 0px solid black;
+    border-top: 0px solid black;
     padding-left: 20px;
     padding-bottom: 5px;
     padding-right: 20px;
@@ -112,37 +112,37 @@ div.container {
 }
 
 span.button {
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: Monospace;    
 }
 
 span.item {
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: Monospace;    
 }
 
 span.menuitem {
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: Monospace;
 }
 
 span.textinput {
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: Monospace;
 }
 
 span.textoutput {
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: Monospace;
 }
 
 span.date {
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: Monospace;
 }
@@ -322,14 +322,14 @@ span.slide {
 
 /* use this to reference document that models an assignment */
 span.mono { 
-    color: white;
+    color: black;
     font-weight: plain;
     font-family: monospace;
 }
 
 /* use this for inline output */
 span.inlineoutput { 
-    color: white;
+    color: black;
     font-weight: plain;
     font-family: monospace;
 }
