@@ -16,28 +16,29 @@ public class ExpressionsThing {
         double three = ( 3.14 * ( 5 + 5 ) ); // Fully Parenthesized
         System.out.println("three = " + three);
 
-        double four = 2*3;
+        int four = (2*3);
         System.out.println("four = " + four);
 
-        double five = (double)55/2;
+        double five = ((double)55/2);
         System.out.println("five = " + five);
+        System.out.println("Without type cast five = 27");
 
-        double six = (double)65/3;
+        double six = (((double)65)/3);
         System.out.println("six = " + six);
 
         double seven = ((double) 55 / 2) + ((double) 65 / 3);
         System.out.println("seven = " + seven);
 
-        double eight = (3.14 * 11.3 * 11.3);
+        double eight = (3.14 * (11.3 * 11.3));
         System.out.println(("eight = " + eight));
 
         double nine = (27.7 * 27.7);
         System.out.println("nine = " + nine);
 
-        double ten = (((3.14 * 11.3 * 11.3)+(27.7 * 27.7))/2);
+        double ten = (((3.14 * (11.3 * 11.3))+(27.7 * 27.7))/2);
         System.out.println("ten = " + ten);
 
-        double eleven = 0.17*243.5;
+        double eleven = (0.17*243.5);
         System.out.println("eleven = " + eleven);
         // TODO: 2/6/2019   Task 1-5 Done, Need To Do Task 6
     }

@@ -7,51 +7,55 @@ Made By Miguel Cruz | Lab 4
 package shapes;
 import java.awt.Color;
 import javax.swing.SwingUtilities;
-import painter.*;
-import shapes.*;
+
+import painter.SPainter;
 
 public class ShapesThing {
-
-    static SSquare square = new SSquare(400);
-    static SCircle disk = square.inscribingCircle();
-    static SSquare diamond = disk.inscribingSquare();
-
+    //Global
+    SPainter paintBrush = new SPainter("ShapesThing",600,600);
+    SSquare square = new SSquare(400);
+    SCircle disk = square.inscribingCircle();
+    SSquare diamond = disk.inscribingSquare();
 
     public void paintTheImage(){
-        SPainter paintBrush = new SPainter("idk",800,800);
-        paintBrush.setRandomColor();
-        paintBrush.paint(square);
+
+        paintBrush.setColor(Color.BLACK);
+        paintBrush.setBrushWidth(2);
+        paintBrush.draw(square);
         paintBrush.draw(disk);
         paintBrush.setColor(Color.BLUE);
+        paintBrush.tl(45);
         paintBrush.paint(diamond);
     }
+    public void printShapeData(){
+
+        System.out.println("-------------------------------------------------");
+        System.out.println("Square = " + square.toString());
+        System.out.println("Area of the square = " + square.area());
+        System.out.println("Perimeter of the square = " + square.perimeter());
+        System.out.println("Diagonal of the square = " + square.diagonal());
+        System.out.println("-------------------------------------------------");
+
+        System.out.println("Disk = " + disk.toString());
+        System.out.println("Area of the disk = " + disk.area());
+        System.out.println("Perimeter of the disk = " + disk.perimeter());
+        System.out.println("-------------------------------------------------");
+
+        System.out.println("Diamond = " + diamond.toString());
+        System.out.println("Area of the diamond = " + diamond.area());
+
+    }
+
+
+
+
 
     public ShapesThing() {
         paintTheImage();
+        printShapeData();
     }
 
-
     public static void main(String[] args) {
-
-        System.out.println("-------------------------------------------------");
-        System.out.println("square = " + square.toString());
-        System.out.println("area of square = " + square.area());
-        System.out.println("perimeter of square = " + square.perimeter());
-        System.out.println("diagonal of the square = " + square.diagonal());
-        System.out.println("-------------------------------------------------");
-
-        System.out.println("disk = " + disk.toString());
-        System.out.println("area of disk = " + disk.area());
-        System.out.println("perimeter of disk = " + disk.perimeter());
-        System.out.println("-------------------------------------------------");
-
-        System.out.println("diamond = " + diamond.toString());
-        System.out.println("area of diamond = " + diamond.area());
-
-
-
-
-
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 new ShapesThing();
@@ -59,3 +63,6 @@ public class ShapesThing {
         });
     }
 }
+
+
+// TODO: 2/20/19  WORK ON WEBSITE ENTRY FOR THIS LAB 
