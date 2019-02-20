@@ -17,7 +17,7 @@ import shapes.SCircle;
 
 
 public class Interpreter3 {
-// STATIC METHOD
+// STATIC METHOD APPENDED
     private static Color randomColor(){
         int rv = (int)(Math.random()*256);
         int gv = (int)(Math.random()*256);

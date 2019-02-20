@@ -50,6 +50,7 @@ public class ShapesThing {
 
 
 
+
     public ShapesThing() {
         paintTheImage();
         printShapeData();
@@ -60,6 +61,7 @@ public class ShapesThing {
             public void run() {
                 new ShapesThing();
             }
+
         });
     }
 }
