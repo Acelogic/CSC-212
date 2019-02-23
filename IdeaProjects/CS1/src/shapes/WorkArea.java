@@ -1,35 +1,49 @@
 package shapes;
-// How is this working without imports ????
 
 public class WorkArea {
     public static void main(String[] args) {
+        //Constants
+        double deskHeight = 24;
+        double deskWidth = 36;
+
+        double bookHeight = 8.5;
+        double bookWidth = 11;
 
         double cupRadius = 1.15;
+        double plateRadius = 6;
 
-        SRectangle desk = new SRectangle(24, 36);
-        SRectangle books = new SRectangle(8.5, 11);
+        double amountOfBooks = 2;
+        double amountOfPlates = 3;
+        double amountOfCoasters = 3;
 
-        SSquare coasters = new SSquare(cupRadius*2); // *2 because the diameter of the inscribing cup would be the length of the square
-        SCircle glassCups = coasters.inscribingCircle();
+        //Object Instantiation
+        SRectangle desk = new SRectangle(deskHeight, deskWidth);
+        SRectangle book = new SRectangle(bookHeight, bookWidth);
 
-        SCircle plates = new SCircle(6);
+        SSquare coaster = new SSquare(cupRadius*2); // *2 because the diameter of the inscribing cup would be the length of the square
+        SCircle glassCups = coaster.inscribingCircle();
 
-        double netBookArea = books.area() *2; // I'm not writing books.area() + ... to represent multiple books, that's over abstracting.
-        double netPlateArea = plates.area() *3;
-        double netCoasterArea = coasters.area() *3;
+        SCircle plate = new SCircle(plateRadius);
+
+        //Area Calculations
         double netDeskArea = desk.area();
+        double netBookArea = book.area()*amountOfBooks;
+        double netPlateArea = plate.area()*amountOfPlates;
+        double netCoasterArea = coaster.area()*amountOfCoasters;
 
+        //Desk area occupied and area available
         double areaCovered = netBookArea + netPlateArea + netCoasterArea;
         double areaUncovered = netDeskArea - areaCovered;
 
-
-
-
+        //Print Statements
+        System.out.println("-------------------------------------------------");
         System.out.println("Desk Area: " + netDeskArea);
         System.out.println("Area Covered: " + areaCovered);
         System.out.println("Area Uncovered: " + areaUncovered);
+        System.out.println("-------------------------------------------------");
+        System.out.println("Calculation: " +netDeskArea + " - " + areaCovered + " = " + areaUncovered );
     }
-
 }
 
-//TODO: Compare area of glassCups to area of a coaster. (Task 1 done for the most part)
+//TODO: Ask Question about step 2 in task 1 regarding the coaster generation (Task 1 Done For the Most Part)
+

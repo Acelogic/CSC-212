@@ -1,9 +1,11 @@
 package npw;
 
 import painter.SPainter;
-import shapes.*;
-import javax.swing.SwingUtilities;
-import java.awt.Color;
+import shapes.SCircle;
+import shapes.SRectangle;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.geom.Point2D.Double;
 
 

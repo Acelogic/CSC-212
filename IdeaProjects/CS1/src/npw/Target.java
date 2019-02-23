@@ -4,10 +4,12 @@
  * Modified By Miguel Cruz | Lab 2
  */
 package npw;
-import java.awt.Color;
-import javax.swing.SwingUtilities;
+
 import painter.SPainter;
 import shapes.SCircle;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class Target {
     // THE SOLUTION TO THE BLUE DOT PROBLEM

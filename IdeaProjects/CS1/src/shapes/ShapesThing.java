@@ -5,10 +5,11 @@ Made By Miguel Cruz | Lab 4
  */
 
 package shapes;
-import java.awt.Color;
-import javax.swing.SwingUtilities;
 
 import painter.SPainter;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class ShapesThing {
     //Global

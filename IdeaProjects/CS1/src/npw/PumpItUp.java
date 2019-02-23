@@ -1,9 +1,10 @@
 package npw;
 
 import painter.SPainter;
-import shapes.*;
-import javax.swing.SwingUtilities;
-import java.awt.Color;
+import shapes.SSquare;
+
+import javax.swing.*;
+import java.awt.*;
 
 
 

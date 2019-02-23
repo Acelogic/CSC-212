@@ -4,13 +4,13 @@
  */
 package npw;
 
-import java.awt.Color;
-import java.util.Random;
-import javax.swing.SwingUtilities;
-
 import painter.SPainter;
 import shapes.SCircle;
 import shapes.SSquare;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Random;
 
 public class Balloons {
     // REQUIRED INFRASTRUCTURE
