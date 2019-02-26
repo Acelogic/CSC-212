@@ -16,69 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/expressions/ExpressionsThing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/npw/Balloons.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="46" column="22" lean-forward="true" selection-end-line="67" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#515#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/npw/AlternateBalloons.java">
+        <entry file="file://$PROJECT_DIR$/src/shapes/WorkArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#1854#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="86" column="20" lean-forward="true" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mathematics/SurfaceAreaOfCube.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-25">
+              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -86,11 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shapes/ShapesThing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-6">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -111,6 +50,7 @@
       <find>green</find>
       <find>interpreter2</find>
       <find>balloons</find>
+      <find>format</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,27 +77,74 @@
         <option value="$PROJECT_DIR$/src/interpreters/Interpreter1.java" />
         <option value="$PROJECT_DIR$/src/interpreters/Interpreter2.java" />
         <option value="$PROJECT_DIR$/src/mathematics.fxml" />
-        <option value="$PROJECT_DIR$/src/mathematics/SurfaceAreaOfCube.java" />
         <option value="$PROJECT_DIR$/src/npw/Balloons.java" />
-        <option value="$PROJECT_DIR$/src/shapes/ShapesThing.java" />
         <option value="$PROJECT_DIR$/src/interpreters/Interpreter3.java" />
         <option value="$PROJECT_DIR$/src/expressions/ExpressionsThing.java" />
         <option value="$PROJECT_DIR$/src/npw/AlternateBalloons.java" />
+        <option value="$PROJECT_DIR$/src/mathematics/SurfaceAreaOfCube.java" />
+        <option value="$PROJECT_DIR$/src/shapes/ShapesThing.java" />
+        <option value="$PROJECT_DIR$/src/shapes/WorkArea.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="335" />
-    <option name="y" value="31" />
-    <option name="width" value="980" />
-    <option name="height" value="1050" />
+    <option name="x" value="-8" />
+    <option name="width" value="903" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CS1" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CS1" type="616d4139:PackageViewModuleNode" />
+              <item name="expressions" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CS1" type="616d4139:PackageViewModuleNode" />
+              <item name="greetings" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CS1" type="616d4139:PackageViewModuleNode" />
+              <item name="interpreters" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CS1" type="616d4139:PackageViewModuleNode" />
+              <item name="mathematics" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CS1" type="616d4139:PackageViewModuleNode" />
+              <item name="mmw" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CS1" type="616d4139:PackageViewModuleNode" />
+              <item name="npw" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="CS1" type="616d4139:PackageViewModuleNode" />
+              <item name="shapes" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,52 +173,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CS1" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CS1" type="616d4139:PackageViewModuleNode" />
-              <item name="expressions" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CS1" type="616d4139:PackageViewModuleNode" />
-              <item name="greetings" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CS1" type="616d4139:PackageViewModuleNode" />
-              <item name="interpreters" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CS1" type="616d4139:PackageViewModuleNode" />
-              <item name="mmw" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CS1" type="616d4139:PackageViewModuleNode" />
-              <item name="npw" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="CS1" type="616d4139:PackageViewModuleNode" />
-              <item name="shapes" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550725101835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551152347129" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Forks/coffee-gb" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -250,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AlternateBalloons">
+  <component name="RunManager" selected="Application.WorkArea">
     <configuration name="AlternateBalloons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="npw.AlternateBalloons" />
       <module name="CS1" />
@@ -264,12 +209,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Balloons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="npw.Balloons" />
+    <configuration name="Interpreter1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interpreters.Interpreter1" />
       <module name="CS1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="npw.*" />
+          <option name="PATTERN" value="interpreters.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -303,12 +248,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SurfaceAreaOfCube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mathematics.SurfaceAreaOfCube" />
+    <configuration name="WorkArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="shapes.WorkArea" />
       <module name="CS1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mathematics.*" />
+          <option name="PATTERN" value="shapes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -318,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AlternateBalloons" />
-        <item itemvalue="Application.Balloons" />
-        <item itemvalue="Application.SurfaceAreaOfCube" />
-        <item itemvalue="Application.Interpreter3" />
+        <item itemvalue="Application.WorkArea" />
         <item itemvalue="Application.ShapesThing" />
+        <item itemvalue="Application.Interpreter3" />
+        <item itemvalue="Application.Interpreter1" />
+        <item itemvalue="Application.AlternateBalloons" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +296,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.509915" visible="true" weight="0.19798657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.509915" visible="true" weight="0.10402685" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -376,7 +321,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info active="true" anchor="right" id="Structure" order="8" sideWeight="0.49008498" visible="true" weight="0.19798657" />
+      <window_info anchor="right" id="Structure" order="8" sideWeight="0.49008498" weight="0.19798657" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -564,43 +509,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mathematics.fxml">
+    <entry file="file://$PROJECT_DIR$/src/mathematics.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/expressions/ExpressionsThing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="714">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/npw/Balloons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="46" column="22" lean-forward="true" selection-end-line="67" selection-end-column="1" />
+        <state relative-caret-position="561">
+          <caret line="46" column="22" selection-end-line="67" selection-end-column="1" />
           <folding>
-            <element signature="e#0#515#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
             <element signature="e#518#519#0" expanded="true" />
             <element signature="e#564#565#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shapes/ShapesThing.java">
+    <entry file="file://$PROJECT_DIR$/src/npw/AlternateBalloons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+        <state relative-caret-position="952">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="86" column="20" lean-forward="true" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+        <state relative-caret-position="1071">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -609,33 +553,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mathematics/SurfaceAreaOfCube.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="11" selection-start-line="11" selection-end-line="32" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/expressions/ExpressionsThing.java">
+    <entry file="jar://$PROJECT_DIR$/libs/SimplePainter.jar!/shapes/SCircle.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="34">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/npw/AlternateBalloons.java">
+    <entry file="file://$PROJECT_DIR$/src/shapes/ShapesThing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#1854#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-6">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shapes/WorkArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
         </state>
       </provider>
     </entry>
