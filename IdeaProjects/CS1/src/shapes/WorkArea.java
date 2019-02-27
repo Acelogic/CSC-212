@@ -20,8 +20,8 @@ public class WorkArea {
         SRectangle desk = new SRectangle(deskHeight, deskWidth);
         SRectangle book = new SRectangle(bookHeight, bookWidth);
 
-        SSquare coaster = new SSquare(cupRadius*2); // *2 because the diameter of the inscribing cup would be the length of the square
-        SCircle glassCups = coaster.inscribingCircle();
+        SCircle glassCups = new SCircle(cupRadius);
+        SSquare coaster = glassCups.circumscribingSquare();
 
         SCircle plate = new SCircle(plateRadius);
 
@@ -45,5 +45,5 @@ public class WorkArea {
     }
 }
 
-//TODO: Ask Question about step 2 in task 1 regarding the coaster generation (Task 1 Done For the Most Part)
+
 
