@@ -80,6 +80,7 @@ public class Dots {
     // REQUIRED INFRASTRUCTURE
     public Dots() {
         paintTheImage();
+
     }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() { //Static

@@ -42,7 +42,7 @@ public class Balloons {
 
     private void paintBalloons(SPainter painter, int nrOfBalloons) {
         int i = 1;
-        while (ie <= nrOfBalloons) {
+        while (i <= nrOfBalloons) {
             paintOneBalloon(painter); // ask IntelliJ to generate the stub
             i = i + 1;
         }

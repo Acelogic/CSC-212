@@ -10,7 +10,6 @@ import shapes.SCircle;
 
 import javax.swing.*;
 import java.awt.*;
-
 public class Target {
     // THE SOLUTION TO THE BLUE DOT PROBLEM
     private void paintTheImage() {
@@ -27,6 +26,9 @@ public class Target {
         // Step 3
         target.setColor(Color.RED);
         target.paint(DotLayer);
+
+
+
     }
     // REQUIRED INFRASTRUCTURE
     public Target() {
