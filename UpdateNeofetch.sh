@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/mcruz/neofetch
+cd /home/mcruz/gitRepos/neofetch
 git pull
 cd /home/mcruz
 pwd
