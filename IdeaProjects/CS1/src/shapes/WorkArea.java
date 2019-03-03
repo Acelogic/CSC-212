@@ -16,7 +16,7 @@ public class WorkArea {
         double amountOfPlates = 3;
         double amountOfCoasters = 3;
 
-        //Object Instantiation
+        //Object Instantiations
         SRectangle desk = new SRectangle(deskHeight, deskWidth);
         SRectangle book = new SRectangle(bookHeight, bookWidth);
 

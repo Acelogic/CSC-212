@@ -12,7 +12,7 @@ public class WhiteArea {
     double amountOfFaces = 6;
 
 
-    //Object Instantiation
+    //Object Instantiations
     SSquare diceFace = new SSquare(edgeWidth);
     SCircle diceDot = new SCircle(dotRadius);
 
