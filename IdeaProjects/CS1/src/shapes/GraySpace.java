@@ -10,7 +10,7 @@ public class GraySpace {
     static double getOrangeSquareBottomGap = 4.5;
     static double getAmountOfOrangeSquares = 1;
 
-    static double getGraySquareHelperRadius = (getDarkSquareSide - 2*getGraySquareGap)/4;
+    static double getGraySquareHelperRadius = (getDarkSquareSide - (2 * getGraySquareGap))/4;
     static SCircle graySquareHelper = new SCircle(getGraySquareHelperRadius);
 
 
@@ -18,7 +18,7 @@ public class GraySpace {
     static double getOrangeSquareHelperRadius = (getDarkSquareSide - (getOrangeSquareTopGap + getOrangeSquareBottomGap))/2;
     static SCircle orangeSquareHelper = new SCircle((getOrangeSquareHelperRadius));
 
-public static void main(String[] args) {
+    public static void main(String[] args) {
 
         //Object Instantiations
                 SSquare darkSquare = new SSquare(getDarkSquareSide);
