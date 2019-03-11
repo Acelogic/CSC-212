@@ -45,4 +45,7 @@ public class GraySpace {
             System.out.println("-------------------------------------------------");
                 System.out.println("Calculation: " + netDarkSquareArea + " - " + (netGraySquareArea + netOrangeSquareArea) + " = " + netRemainingDarkSquareArea );
     }
+
+
+
 }

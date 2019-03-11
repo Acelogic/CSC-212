@@ -1,5 +1,5 @@
 body {
-    background-image: url(wp.png);
+    background-image: url(wp.jpg);
     background-repeat: repeat;
     font-family: serif;
     font-size: large;
@@ -7,7 +7,7 @@ body {
 }
 
 a:link {color: yellow;}
-a:visited {color: rgb(207, 88, 108);}
+a:visited {color:lightblue;}
 a:hover {color: #6600CC;}
 a:active {color: 6600CC;}
 
@@ -18,12 +18,12 @@ em {
 }
 
 h1 {
-    color: pink;
+    color: lightgoldenrodyellow;
     font-size: 150%;
 }
 
 h2 {
-    color:pink;
+    color:lightgoldenrodyellow; 
     font-size: 120%;
 }
 
