@@ -34,8 +34,6 @@ public class WhiteArea {
     System.out.println("-------------------------------------------------");
     System.out.println("Calculation: " + netDiceFaceArea + " - " + netDotArea + " = " + netDiceWhiteSpace );
 
-    //TODO: Task is Done
-
     }
 
 }
