@@ -2,7 +2,7 @@
 Principals of Programming Course Work.
 
 # Course Worksite
-![alt text](https://i.imgur.com/EjRmtyi.png)
+![alt text](https://i.imgur.com/HBvfgHj.png)
 
 
 # How to Compile ? 
