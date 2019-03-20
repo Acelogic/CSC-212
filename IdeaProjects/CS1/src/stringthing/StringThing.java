@@ -55,11 +55,11 @@ public class StringThing {
         System.out.println(selfCommaPosition);
 
 // POINT D: COMPUTE AND PRINT THE FIVE FIRST NAMES, WITH NO LABELS
-        String singerFirst = singer.substring(singerLength - singerCommaPosition);  //an offset of +2 could be added to CommaPosition to bare the same results
-        String sculptorFirst = sculptor.substring(sculptorLength - sculptorCommaPosition);
-        String painterFirst = painter.substring(painterLength - painterCommaPosition);
-        String dancerFirst = dancer.substring(dancerLength - dancerCommaPosition);
-        String selfFirst = self.substring(selfLength - selfCommaPosition);
+        String singerFirst = singer.substring(singerCommaPosition+2);
+        String sculptorFirst = sculptor.substring(sculptorCommaPosition+2);
+        String painterFirst = painter.substring(painterCommaPosition+2);
+        String dancerFirst = dancer.substring(dancerCommaPosition+2);
+        String selfFirst = self.substring(selfCommaPosition+2);
 
         System.out.println("\nFirst names ...");
 

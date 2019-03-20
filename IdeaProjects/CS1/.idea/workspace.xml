@@ -18,21 +18,79 @@
     <favorites_list name="CS1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/arrayplay/Streets.java">
+        <entry file="file://$PROJECT_DIR$/src/greetings/HelloYou.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="-7">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/greetings/HelloWorld.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="e#155#156#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/expressions/ExpressionsThing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stringthing/StringThing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-590">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/stringthing/StringThing.java">
+        <entry file="file://$PROJECT_DIR$/src/npw/AlternateBalloons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+            <state relative-caret-position="279">
+              <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-252">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,7 +115,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -92,16 +150,16 @@
         <option value="$PROJECT_DIR$/src/shapes/WhiteArea.java" />
         <option value="$PROJECT_DIR$/src/shapes/GraySpace.java" />
         <option value="$PROJECT_DIR$/src/stringthing/StringOps.java" />
-        <option value="$PROJECT_DIR$/src/stringthing/StringThing.java" />
         <option value="$PROJECT_DIR$/src/arrayplay/Primes.java" />
         <option value="$PROJECT_DIR$/src/arrayplay/Streets.java" />
+        <option value="$PROJECT_DIR$/src/stringthing/StringThing.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
-    <option name="y" value="60" />
-    <option name="width" value="842" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="543" />
+    <option name="y" value="32" />
+    <option name="width" value="844" />
     <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -138,6 +196,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -189,17 +248,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552512749890" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553119551177" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Forks/coffee-gb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../public_html/CS1WorkSite" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -213,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Streets">
+  <component name="RunManager" selected="Application.StringThing">
     <configuration name="GraySpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="shapes.GraySpace" />
       <module name="CS1" />
@@ -281,9 +339,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringThing" />
         <item itemvalue="Application.Streets" />
         <item itemvalue="Application.Primes" />
-        <item itemvalue="Application.StringThing" />
         <item itemvalue="Application.StringOps" />
         <item itemvalue="Application.GraySpace" />
       </list>
@@ -312,9 +370,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="60" width="842" height="1020" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5037369" visible="true" weight="0.36180905" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5037369" visible="true" weight="0.15973154" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -322,7 +381,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.4962631" side_tool="true" weight="0.15478165" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49773243" visible="true" weight="0.3225084" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49773243" visible="true" weight="0.32205883" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -477,16 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/npw/Target.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -546,24 +595,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../CSC-365-WebParser/CSC-365-WebParser.iml" />
-    <entry file="file://$PROJECT_DIR$/src/greetings/HelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#205#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/greetings/HelloYou.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -571,13 +602,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/expressions/ExpressionsThing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -592,26 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="18" column="85" selection-start-line="18" selection-start-column="85" selection-end-line="18" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="86" column="3" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/npw/AlternateBalloons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,31 +667,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stringthing/StringOps.java">
+    <entry file="file://$PROJECT_DIR$/src/stringthing/StringOps.java" />
+    <entry file="file://$PROJECT_DIR$/src/arrayplay/Primes.java" />
+    <entry file="file://$PROJECT_DIR$/src/arrayplay/Streets.java" />
+    <entry file="file://$PROJECT_DIR$/src/greetings/HelloYou.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="-7">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/arrayplay/Primes.java">
+    <entry file="file://$PROJECT_DIR$/src/greetings/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        <state relative-caret-position="-7">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/arrayplay/Streets.java">
+    <entry file="file://$PROJECT_DIR$/src/expressions/ExpressionsThing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="-7">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stringthing/StringThing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+        <state relative-caret-position="106">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-590">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/npw/AlternateBalloons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
