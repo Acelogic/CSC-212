@@ -13,7 +13,8 @@ import javax.swing.SwingUtilities;
 import painter.SPainter;
 public class GraphemeToColorSynesthesia {
     private static final int fontsize = 30;
-    private static final String theLetters = "AEIOU";
+    //private static final String theLetters = "AEIOU";
+    private static final String theLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static String[] letters;
     private static Color[] colors;
     private void paintingCode() {
@@ -23,7 +24,7 @@ public class GraphemeToColorSynesthesia {
         miro.setFontSize(fontsize);
         initializeColorMap(theLetters);
 // INTERPRETATION
-        while ( true ) {  // <-- uhhhhhhh???
+        while ( true ) { 
             String input = JOptionPane.showInputDialog(null,
                     "Please enter a word, or a few words ...");
             if ( input == null ) { input = "EXIT"; }
