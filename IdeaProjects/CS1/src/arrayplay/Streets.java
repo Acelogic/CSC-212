@@ -25,11 +25,21 @@ public class Streets {
 
         System.out.println("\nThe initial array ...");
         int i = 0;
-        while ( i < streets.length ) {
+        while (i < streets.length) {
             System.out.println(streets[i]);
             i = i + 1;
         }
 
+        String swap = streets[0];
+        streets[0] = streets[streets.length - 1];
+        streets[streets.length - 1] = swap;
+
+
+        System.out.println("\nThe final array ...");
+        for ( int x = 0; x < streets.length; x = x + 1 ) {
+            System.out.println(streets[x]);
+
+        }
     }
 
 }
