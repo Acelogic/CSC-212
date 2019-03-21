@@ -1,13 +1,7 @@
 package stringthing;
-
-import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
-
 public class StringThing {
 
-    public
-
-
-    static void main(String[] args) {
+   public static void main(String[] args) {
 // POINT A: CREATE A PRINT SOME STRINGS THAT REPRESENT NAMES
         String singer = "Holiday, Billie";
         String sculptor = "Claudel, Camille";

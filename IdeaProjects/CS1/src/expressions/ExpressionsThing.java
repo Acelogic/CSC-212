@@ -21,7 +21,6 @@ public class ExpressionsThing {
 
         double five = ((double)55/2);
         System.out.println("five = " + five);
-        System.out.println("Without type cast five = 27");
 
         double six = (((double)65)/3);
         System.out.println("six = " + six);
@@ -40,7 +39,20 @@ public class ExpressionsThing {
 
         double eleven = (0.17*243.5);
         System.out.println("eleven = " + eleven);
-        // TODO: 2/6/2019   Task 1-5 Done, Need To Do Task 6 (Finish the Crypto Problem)
+
+        int twelve = (3/3);
+        System.out.println("twelve = " + twelve);
+
+        int thirteen = ((7-4)-2);
+        System.out.println("thirteen = " + thirteen);
+
+        int fourteen = (((9-7)+3)-1);
+        System.out.println("fourteen = " + fourteen);
+
+        int fifteen = (6-((2+2+4)/8));
+        System.out.println("fifteen = " + fifteen);
+
+
     }
 
 }
