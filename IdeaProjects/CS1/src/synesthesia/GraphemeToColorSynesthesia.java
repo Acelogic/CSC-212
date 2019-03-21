@@ -24,7 +24,7 @@ public class GraphemeToColorSynesthesia {
         miro.setFontSize(fontsize);
         initializeColorMap(theLetters);
 // INTERPRETATION
-        while ( true ) { 
+        while ( true ) {
             String input = JOptionPane.showInputDialog(null,
                     "Please enter a word, or a few words ...");
             if ( input == null ) { input = "EXIT"; }
