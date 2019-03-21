@@ -1,8 +1,15 @@
+
+*{ 
+
+    font-family: 'VT323', monospace;
+  }
+
+
 body {
     background-image: url(wp.jpg);
     background-repeat: repeat;
     font-family: serif;
-    font-size: large;
+    font-size: 22;
     color: white;
 }
 
@@ -349,7 +356,11 @@ param {
 
 
 
-
+.tux{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
 
 /* Slides Show*/
 .mySlides {
