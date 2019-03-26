@@ -19,20 +19,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/arrayplay/Primes.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/npw/HirstDots.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="-388">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#3263#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#2505#2506#0" expanded="true" />
+                <element signature="e#2539#2540#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/npw/TextRectangles.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/npw/AlternateBalloons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="207">
+              <caret line="79" column="14" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,10 +51,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/arrayplay/Streets.java">
+        <entry file="file://$PROJECT_DIR$/src/npw/ColorfulAbstractGradient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="232">
+              <caret line="94" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="106" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,6 +81,8 @@
       <find>balloons</find>
       <find>format</find>
       <find>remap</find>
+      <find>color</find>
+      <find>randomDistance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,7 +123,6 @@
         <option value="$PROJECT_DIR$/src/stringthing/StringOps.java" />
         <option value="$PROJECT_DIR$/src/arrayplay/Primes.java" />
         <option value="$PROJECT_DIR$/src/arrayplay/Streets.java" />
-        <option value="$PROJECT_DIR$/src/stringthing/StringThing.java" />
         <option value="$PROJECT_DIR$/src/people/PersonSpecification.java" />
         <option value="$PROJECT_DIR$/src/people/Person.java" />
         <option value="$PROJECT_DIR$/src/people/PersonDemo2.java" />
@@ -119,14 +133,18 @@
         <option value="$PROJECT_DIR$/src/chromesthesia1/Chromesthesia.java" />
         <option value="$PROJECT_DIR$/src/chromesthesia2/Chromesthesia.java" />
         <option value="$PROJECT_DIR$/src/npw/TextRectangles.java" />
+        <option value="$PROJECT_DIR$/src/stringthing/StringThing.java" />
+        <option value="$PROJECT_DIR$/src/npw/AbstractGradient.java" />
+        <option value="$PROJECT_DIR$/src/npw/ColorfulAbstractGradient.java" />
+        <option value="$PROJECT_DIR$/src/npw/HirstDots.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="992" />
-    <option name="y" value="24" />
-    <option name="width" value="928" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="418" />
+    <option name="y" value="-4" />
+    <option name="width" value="1396" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -176,7 +194,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553531733100" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553636386866" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/public_html/CS1WorkSite" />
     <property name="project.structure.last.edited" value="Project" />
@@ -202,13 +220,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TextRectangles">
-    <configuration name="GraphemeToColorSynesthesia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="synesthesia.GraphemeToColorSynesthesia" />
+  <component name="RunManager" selected="Application.HirstDots">
+    <configuration name="AbstractGradient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="npw.AbstractGradient" />
       <module name="CS1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="synesthesia.*" />
+          <option name="PATTERN" value="npw.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -216,12 +234,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="people.PersonDemo1" />
+    <configuration name="ColorfulAbstractGradient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="npw.ColorfulAbstractGradient" />
       <module name="CS1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="people.*" />
+          <option name="PATTERN" value="npw.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -229,12 +247,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="people.PersonDemo2" />
+    <configuration name="HirstDots" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="npw.HirstDots" />
       <module name="CS1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="people.*" />
+          <option name="PATTERN" value="npw.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,12 +260,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Roller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chanceapps.Roller" />
+    <configuration name="StringThing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stringthing.StringThing" />
       <module name="CS1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chanceapps.*" />
+          <option name="PATTERN" value="stringthing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -270,11 +288,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HirstDots" />
+        <item itemvalue="Application.ColorfulAbstractGradient" />
+        <item itemvalue="Application.HirstDots" />
+        <item itemvalue="Application.AbstractGradient" />
         <item itemvalue="Application.TextRectangles" />
-        <item itemvalue="Application.GraphemeToColorSynesthesia" />
-        <item itemvalue="Application.PersonDemo2" />
-        <item itemvalue="Application.PersonDemo1" />
-        <item itemvalue="Application.Roller" />
       </list>
     </recent_temporary>
   </component>
@@ -301,10 +319,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="992" y="24" width="928" height="1056" extended-state="4" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5037369" visible="true" weight="0.15192744" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5037369" visible="true" weight="0.11442786" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -312,7 +329,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.4962631" side_tool="true" weight="0.15478165" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49773243" visible="true" weight="0.32185146" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49773243" weight="0.42842215" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935413" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -320,7 +337,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5022676" side_tool="true" weight="0.31001076" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32723358" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32706374" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -329,7 +346,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Structure" order="8" sideWeight="0.49008498" visible="true" weight="0.16780046" />
+      <window_info anchor="right" id="Structure" order="8" sideWeight="0.49008498" visible="true" weight="0.2824765" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -338,27 +355,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libs/SimplePainter.jar!/shapes/SPolygonADT.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/SimplePainter.jar!/shapes/SPolygon.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/SimplePainter.jar!/shapes/SCircleADT.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/SimplePainter.jar!/shapes/SCircle.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -543,16 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/npw/AlternateBalloons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreters/Interpreter2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -576,13 +562,6 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/src/people/PersonSpecification.java" />
     <entry file="file://$PROJECT_DIR$/src/people/Person.java" />
-    <entry file="file://$PROJECT_DIR$/src/stringthing/StringThing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="19" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chromesthesia0/Chromesthesia.java" />
     <entry file="file://$PROJECT_DIR$/src/chromesthesia0/Pitch.java" />
     <entry file="file://$PROJECT_DIR$/src/chromesthesia1/Pitch.java" />
@@ -597,10 +576,17 @@
     <entry file="file://$PROJECT_DIR$/src/people/PersonDemo1.java" />
     <entry file="file://$PROJECT_DIR$/src/people/PersonDemo2.java" />
     <entry file="file://$PROJECT_DIR$/src/synesthesia/GraphemeToColorSynesthesia.java" />
+    <entry file="file://$PROJECT_DIR$/src/stringthing/StringThing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="56" lean-forward="true" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/arrayplay/Primes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -613,10 +599,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/npw/TextRectangles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="540">
+          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/npw/AbstractGradient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="84" column="43" lean-forward="true" selection-end-line="98" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2987#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#1939#1940#0" expanded="true" />
+            <element signature="e#1973#1974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/npw/AlternateBalloons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="79" column="14" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/npw/ColorfulAbstractGradient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="94" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/npw/HirstDots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-388">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#3263#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#2505#2506#0" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -114,6 +114,7 @@ public class StringThing {
 
         return firstName;
 
+
     }
 
     private static String lastName(String directoryStyleName) {
