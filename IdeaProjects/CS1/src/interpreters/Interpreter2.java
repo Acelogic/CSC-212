@@ -66,7 +66,7 @@ public class Interpreter2 {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new Interpreter3();
+                new Interpreter2();
             }
         });
     }
