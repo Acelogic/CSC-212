@@ -64,7 +64,7 @@ public class ReverseCopy {
 
     private static String createFullFileName(String fileName) {
         String separator = System.getProperty("file.separator");
-        String home = System.getProperty("user.dir");// Changed this from user.home to get a more accurate path
+        String home = System.getProperty("user.dir");// Changed this from user.home in order to work on windows
         String path = home + separator + "CS1Files" + separator + "data" + separator;
         String fullFileName = path + fileName;
         return fullFileName;

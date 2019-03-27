@@ -78,7 +78,7 @@ ReverseCopy.java</font>
 <a name="l59"><span class="ln">59   </span></a>    // found in the CS1Files/data subdirectory of the user's home directory.
 <a name="l60"><span class="ln">60   </span></a>    <span class="s0">private static </span>String createFullFileName(String fileName) {
 <a name="l61"><span class="ln">61   </span></a>        String separator = System.getProperty(<span class="s2">&quot;file.separator&quot;</span>);
-<a name="l62"><span class="ln">62   </span></a>        String home = System.getProperty(<span class="s2">&quot;user.dir&quot;</span>);<span class="s3">// Changed this from user.home to get a more accurate path(&quot;user.home&quot;);</span>
+<a name="l62"><span class="ln">62   </span></a>        String home = System.getProperty(<span class="s2">&quot;user.dir&quot;</span>);<span class="s3">// Changed this from user.home in order to work on windows</span>
 <a name="l63"><span class="ln">63   </span></a>        String path = home + separator + <span class="s2">&quot;CS1Files&quot; </span>+ separator + <span class="s2">&quot;data&quot; </span>+ separator;
 <a name="l64"><span class="ln">64   </span></a>        String fullFileName = path + fileName;
 <a name="l65"><span class="ln">65   </span></a>        <span class="s0">return </span>fullFileName;
