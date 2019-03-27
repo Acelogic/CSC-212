@@ -100,9 +100,9 @@ public class ColorfulAbstractGradient {
 
     private void randomColor(SPainter painter){
         Random rgen = new Random();
-        int randomRGBValue1 = rgen.nextInt(255);
-        int randomRGBValue2 = rgen.nextInt(255);
-        int randomRGBValue3 = rgen.nextInt(255);
-        painter.setColor(new Color(randomRGBValue1,randomRGBValue2,randomRGBValue3));
+        int r = rgen.nextInt(255);
+        int g = rgen.nextInt(255);
+        int b = rgen.nextInt(255);
+        painter.setColor(new Color(r,g,b));
     }
 }
