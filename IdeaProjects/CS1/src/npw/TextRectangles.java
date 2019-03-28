@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class TextRectangles {
 
+    public TextRectangles(){
+        //main();
+    }
+
 
     public static void drawOneRow(int nrOfColumns) {
         for (int i = 0; i < nrOfColumns; i++) {
@@ -21,6 +25,7 @@ public class TextRectangles {
         while (i <= nrOfRows) {
             drawOneRow(nrOfColumns);
             i = i + 1;
+
         }
 
     }
@@ -34,6 +39,7 @@ public class TextRectangles {
         System.out.print("Number of Columns: ");
         int columns = sc.nextInt();
         drawRectangle(rows, columns);
+
 
 
     }
