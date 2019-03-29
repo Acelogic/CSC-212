@@ -13,26 +13,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class HirstDots {
-    static int cols;
-    // Grab the input information
-    static int width = getNumber("Canvas Width in Pixels");
-    static int height = getNumber("Canvas Height in Pixels ");
+    static int columnCount;
     static int spacingFactor = getNumber("Dot Spacing in Pixels");
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new HirstDots();
-            }
-        });
-    }
-
-    public HirstDots() {
-        paintTheImage();
-    }
-
     private void paintTheImage(){
-
+         int width = getNumber("Canvas Width in Pixels");
+         int height = getNumber("Canvas Height in Pixels ");
         // Establish the painter
         SPainter painter = new SPainter("SimpleDots", width, height);
         SCircle dot = new SCircle(5);
@@ -58,10 +44,10 @@ public class HirstDots {
         // Calcuate the number of columns. We want to fill the screen, but we don't want
         // any dots only half on the canvas, so we subtract some space.
         int nrOfCols = ( width / verticalSpacing ) - 2;
-        cols = 0;
-        while (cols < nrOfCols){
+        columnCount = 0;
+        while (columnCount < nrOfCols){
             nextCol(painter, verticalSpacing);
-            cols = cols + 1;
+            columnCount = columnCount + 1;
             paintColumn(painter, dot, height);
 
         }
@@ -75,33 +61,34 @@ public class HirstDots {
     private void paintColumn(SPainter painter, SCircle dot, int height) {
         int horizontalSpacing = spacingFactor;
         int totalDistanceTraveled = 0;
-        int dotsPainted = -1;
+        int dotsPainted = -1; // Debug
         while(totalDistanceTraveled < height) {
-            // Good Debug Code
-            System.out.println("Calculation: " + horizontalSpacing+"px" + " + " + totalDistanceTraveled+"px");
+
+            System.out.println("DEBUG: Calculation: " + horizontalSpacing+"px" + " + " + totalDistanceTraveled+"px"); // Debug
 
             totalDistanceTraveled = totalDistanceTraveled + horizontalSpacing;
             painter.mfd(horizontalSpacing);
             paintOneDot(painter, dot);
             dotsPainted = dotsPainted + 1;
 
-            // Good Debug Code
-            System.out.println("Total Distance Traveled: "+ totalDistanceTraveled+"px");
-            System.out.println("Dots Painted: "+ dotsPainted);
-            System.out.println("Working Column: " + cols);
+            //Debug Code
+            System.out.println("DEBUG: Total Distance Traveled: "+ totalDistanceTraveled+"px");
+            System.out.println("DEBUG: Dots Painted: "+ dotsPainted);
+            System.out.println("DEBUG: Working Column: " + columnCount);
             System.out.println("-------------------------------------------------");
         }
-        // Make the method invariant with respect to painter position.
-        painter.mbk(totalDistanceTraveled);
-        System.out.println("Spacing Factor: " + spacingFactor +"px");
-        System.out.println("Dot Array Size: " + dotsPainted + " x " + cols);
-        System.out.println("Total Dots Painted: " + dotsPainted * cols);
-    }
+            // Make the method invariant with respect to painter position.
+            painter.mbk(totalDistanceTraveled);
+
+            //Debug Code
+            System.out.println("DEBUG: Spacing Factor: " + spacingFactor +"px");
+            System.out.println("DEBUG: Dot Array Size: " + dotsPainted + " x " + columnCount);
+            System.out.println("DEBUG: Total Dots Painted: " + dotsPainted * columnCount);
+        }
 
     // Moves the painter to the next column.
     private void nextCol(SPainter painter, double colWidth){
         painter.tl(90);
-
         painter.mfd(colWidth);
         painter.tr(90);
     }
@@ -113,4 +100,19 @@ public class HirstDots {
         int b = rgen.nextInt(255);
         painter.setColor(new Color(r,g,b));
     }
+
+    private HirstDots() {
+        paintTheImage();
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new HirstDots();
+            }
+        });
+    }
+
+
+
 }
