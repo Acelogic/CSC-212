@@ -4,19 +4,14 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TextRectangles {
-
-    public TextRectangles(){
-        //main();
-    }
-
-    public static void drawOneRow(int nrOfColumns) {
+    private static void drawOneRow(int nrOfColumns) {
         for (int i = 0; i < nrOfColumns; i++) {
             System.out.print("*");
         }
         System.out.println("");
     }
 
-    public static void drawRectangle(int nrOfRows, int nrOfColumns) {
+    private static void drawRectangle(int nrOfRows, int nrOfColumns) {
         int i = 1;
         while (i <= nrOfRows) {
             drawOneRow(nrOfColumns);
@@ -24,7 +19,6 @@ public class TextRectangles {
         }
 
     }
-
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

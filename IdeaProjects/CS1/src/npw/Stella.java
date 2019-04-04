@@ -8,14 +8,22 @@ import java.awt.*;
 import java.util.Random;
 import java.util.Scanner;
 
+import static javax.swing.SwingUtilities.*;
+
 public class Stella {
-    private static void paintCanvas() {
+    private Stella() {
+        paintCanvas();
+    }
+    public static void main(String[] args) {
+        invokeLater( Stella::new );
+    }
+    private void paintCanvas() {
         int squareCount = getNumber( "How many Squares to Draw" );
         SPainter painter = new SPainter( "Stella", 800, 800 );
         drawSquare( painter, squareCount );
     }
 
-    private static void drawSquare(SPainter painter, int squareCount) {
+    private void drawSquare(SPainter painter, int squareCount) {
         int squareSide = 700;
         int colorSwitchFlag = 1;
         int rgenColor1Count = 0;
@@ -44,7 +52,7 @@ public class Stella {
         System.out.println("DEBUG: "+rgenColor1Count + " Colors of Color Type " + rgenColor1.toString() + " was drawn"); // Debug
         System.out.println("DEBUG: "+rgenColor2Count + " Colors of Color Type " + rgenColor2.toString() + " was drawn"); // Debug
     }
-    private static Color randomColor() {
+    private Color randomColor() {
         Random rgen = new Random();
         int r = rgen.nextInt( 255 );
         int g = rgen.nextInt( 255 );
@@ -56,17 +64,4 @@ public class Stella {
         Scanner scanner = new Scanner( nss );
         return scanner.nextInt();
     }
-
-    private Stella() {
-        paintCanvas();
-    }
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater( new Runnable() {
-            public void run() {
-                new Stella();
-            }
-        } );
-    }
-
-
 }

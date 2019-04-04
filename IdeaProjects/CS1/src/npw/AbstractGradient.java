@@ -12,17 +12,15 @@ import java.awt.*;
 import java.util.Random;
 import java.util.Scanner;
 
+import static javax.swing.SwingUtilities.*;
+
 public class AbstractGradient {
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new AbstractGradient();
-            }
-        });
+        invokeLater( AbstractGradient::new );
     }
 
-    public AbstractGradient() {
+    private AbstractGradient() {
         paintTheImage();
     }
 
@@ -53,7 +51,7 @@ public class AbstractGradient {
 
     private void paintGradient(SPainter painter, SCircle dot, int height, int width, int colWidth){
         int cols = 0;
-        // Calcuate the number of columns. We want to fill the screen, but we don't want
+        // Calculate the number of columns. We want to fill the screen, but we don't want
         // any dots only half on the canvas, so we subtract some space.
         int nrOfCols = ( width / colWidth ) - 2;
 

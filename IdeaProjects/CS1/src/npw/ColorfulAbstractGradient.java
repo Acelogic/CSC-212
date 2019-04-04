@@ -12,17 +12,15 @@ import java.awt.*;
 import java.util.Random;
 import java.util.Scanner;
 
+import static javax.swing.SwingUtilities.*;
+
 public class ColorfulAbstractGradient {
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new ColorfulAbstractGradient();
-            }
-        });
+        invokeLater( ColorfulAbstractGradient::new );
     }
 
-    public ColorfulAbstractGradient() {
+    private ColorfulAbstractGradient() {
         paintTheImage();
     }
 
@@ -53,10 +51,9 @@ public class ColorfulAbstractGradient {
 
     private void paintGradient(SPainter painter, SCircle dot, int height, int width, int colWidth){
         int cols = 0;
-        // Calcuate the number of columns. We want to fill the screen, but we don't want
+        // Calculate the number of columns. We want to fill the screen, but we don't want
         // any dots only half on the canvas, so we subtract some space.
         int nrOfCols = ( width / colWidth ) - 2;
-
         while (cols < nrOfCols){
             nextCol(painter, colWidth);
             paintColumn(painter, dot, height);
@@ -68,7 +65,6 @@ public class ColorfulAbstractGradient {
         randomColor(painter);
         painter.paint(dot);
     }
-
     // Dots are spaced tighter together near the bottom of the canvas.
     private void paintColumn(SPainter painter, SCircle dot, int height) {
         int travel = 0;
@@ -85,19 +81,16 @@ public class ColorfulAbstractGradient {
         // Make the method invariant with respect to painter position.
         painter.mbk(totalDistanceTraveled);
     }
-
     // Moves the painter to the next column.
     private void nextCol(SPainter painter, int colWidth){
         painter.tl(90);
         painter.mfd(colWidth);
         painter.tr(90);
     }
-
     private int randomDistance(int maxDistance){
         Random rgen = new Random();
         return rgen.nextInt(maxDistance);
     }
-
     private void randomColor(SPainter painter){
         Random rgen = new Random();
         int r = rgen.nextInt(255);
