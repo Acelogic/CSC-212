@@ -110,6 +110,7 @@ public class SimpleDots {
         painter.tr( 90 );
     }
 
+
     private void dynamicColor(SPainter painter) {
         Random rgen = new Random();
         if (colorChose.equalsIgnoreCase( "red" )) {

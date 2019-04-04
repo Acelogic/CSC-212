@@ -60,25 +60,25 @@ public class HirstDots {
 
     private void paintColumn(SPainter painter, SCircle dot, int height) {
         int horizontalSpacing = spacingFactor;
-        int totalDistanceTraveled = 0;
+        int displacement = 0;
         int dotsPainted = -1; // Debug
-        while(totalDistanceTraveled < height) {
+        while(displacement < height) {
 
-            System.out.println("DEBUG: Calculation: " + horizontalSpacing+"px" + " + " + totalDistanceTraveled+"px"); // Debug
+            System.out.println("DEBUG: Calculation: " + horizontalSpacing+"px" + " + " + displacement+"px"); // Debug
 
-            totalDistanceTraveled = totalDistanceTraveled + horizontalSpacing;
+            displacement = displacement + horizontalSpacing;
             painter.mfd(horizontalSpacing);
             paintOneDot(painter, dot);
             dotsPainted = dotsPainted + 1;
 
             //Debug Code
-            System.out.println("DEBUG: Total Distance Traveled: "+ totalDistanceTraveled+"px");
+            System.out.println("DEBUG: Total Distance Traveled: "+ displacement+"px");
             System.out.println("DEBUG: Dots Painted: "+ dotsPainted);
             System.out.println("DEBUG: Working Column: " + columnCount);
             System.out.println("-------------------------------------------------");
         }
             // Make the method invariant with respect to painter position.
-            painter.mbk(totalDistanceTraveled);
+            painter.mbk(displacement);
 
             //Debug Code
             System.out.println("DEBUG: Spacing Factor: " + spacingFactor +"px");

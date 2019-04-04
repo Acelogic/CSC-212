@@ -17,7 +17,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-
 public class ComplexCircles {
     int width = getNumber("Canvas Width in Pixels");
     int height = getNumber("Canvas Height in Pixels ");
@@ -33,16 +32,12 @@ public class ComplexCircles {
         }
         return path;
     }
-
-
     public static BufferedImage getImageFromPath(String path) throws IOException {
         File file = new File(path);
         BufferedImage image = ImageIO.read(file);
         return image;
     }
-
     static BufferedImage chosenImage;
-
     static {
         try {
             chosenImage = getImageFromPath(getPathFromFileChooser());
@@ -50,7 +45,6 @@ public class ComplexCircles {
             e.printStackTrace();
         }
     }
-
     // Most likely we don't need this one
     private static Color getPixelColor(int x, int y, BufferedImage image) {
         // Getting pixel color by position x and y
@@ -62,27 +56,20 @@ public class ComplexCircles {
         System.out.println(PixelColor.toString());
         return PixelColor;
     }
-
     private void paintOnePixel(int rowWidth, int colheight, SPainter painter, SCircle circle, BufferedImage image) throws IOException {
         painter.setColor(getPixelColor(rowWidth, colheight, image));
         //Changing this may make pictures generate faster
         painter.mrt(pixelSize);
         painter.paint(circle);
-
-
     }
-
     private void paintOneRow(int height, SPainter painter, SCircle circle, BufferedImage image) throws IOException {
         int rowPixelCount = 0;
         for (int width = 0; width < image.getWidth(); width++) {
             paintOnePixel(width, height, painter, circle, chosenImage);
             rowPixelCount = rowPixelCount + 1;
             System.out.println("DEBUG: Row Pixel Count:  " + rowPixelCount);
-
         }
-
     }
-
     public void drawRows(SPainter painter, SCircle circle, BufferedImage image) throws IOException {
         int rowCount = 0;
         for (int height = 0; height < image.getHeight(); height++) {
@@ -95,25 +82,19 @@ public class ComplexCircles {
             }
         }
     }
-
     private void nextRow(int pushDownFactor, SPainter painter, BufferedImage image) {
         System.out.println("DEBUG: NEXT ROW");
         painter.moveTo(new Point2D.Double(0, 0 + pushDownFactor));
-
     }
-
     //Changing this stretches picture
     static double pixelSize = 1;
-
     private void paintTheImage() throws IOException {
-
         SPainter painter = new SPainter("ComplexCircle", width, height);
         SCircle pixel = new SCircle(pixelSize);
         painter.moveTo(new Point2D.Double(0, 0));
         // Paint it!
         drawRows(painter, pixel, chosenImage);
     }
-
     public static void main(String[] args) throws IOException {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -125,13 +106,11 @@ public class ComplexCircles {
             }
         });
     }
-
     private static int getNumber(String prompt) {
         String nss = JOptionPane.showInputDialog(null, prompt + "?");
         Scanner scanner = new Scanner(nss);
         return scanner.nextInt();
     }
-
     public ComplexCircles() throws IOException {
         paintTheImage();
     }

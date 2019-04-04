@@ -33,6 +33,7 @@ public class ComplexSquares {
         return path;
     }
 
+    static BufferedImage chosenImage;
 
     public static BufferedImage getImageFromPath(String path) throws IOException {
         File file = new File(path);
@@ -40,7 +41,6 @@ public class ComplexSquares {
         return image;
     }
 
-    static BufferedImage chosenImage;
 
     static {
         try {
@@ -97,7 +97,7 @@ public class ComplexSquares {
 
     private void nextRow(int pushDownFactor, SPainter painter, BufferedImage image) {
         System.out.println("DEBUG: NEXT ROW");
-        painter.moveTo(new Point2D.Double(0, 0 + pushDownFactor));
+        painter.moveTo(new Point2D.Double(0, pushDownFactor));
 
     }
 

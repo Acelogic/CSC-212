@@ -9,23 +9,18 @@ public class TextRectangles {
         //main();
     }
 
-
     public static void drawOneRow(int nrOfColumns) {
         for (int i = 0; i < nrOfColumns; i++) {
             System.out.print("*");
-
         }
-
         System.out.println("");
     }
-
 
     public static void drawRectangle(int nrOfRows, int nrOfColumns) {
         int i = 1;
         while (i <= nrOfRows) {
             drawOneRow(nrOfColumns);
             i = i + 1;
-
         }
 
     }
@@ -39,8 +34,6 @@ public class TextRectangles {
         System.out.print("Number of Columns: ");
         int columns = sc.nextInt();
         drawRectangle(rows, columns);
-
-
 
     }
 }
