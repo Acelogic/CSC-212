@@ -62,7 +62,6 @@ public class Invention2 {
         String path = home + separator + "CS1Files" + separator + "data" + separator;
         return path;
     }
-
     private BufferedImage randomlyGetImageFromPath(String path) throws IOException {
 
         Random rgen = new Random();
@@ -71,9 +70,16 @@ public class Invention2 {
         // Randomly choose any image from the folder (Scan for Jpg and PNG);
         FilenameFilter filter = (dir, name) -> {
             String lowercaseName = name.toLowerCase();
-            if (lowercaseName.endsWith(".jpg") || lowercaseName.endsWith(".png") || lowercaseName.endsWith("jpeg")) {
+            if (lowercaseName.endsWith(".jpg")  ) {
                 return true;
-            } else {
+            }
+            else if (lowercaseName.endsWith(".png")){
+                return true;
+            }
+            else if(lowercaseName.endsWith(".jpeg")) {
+                return true;
+            }
+            else {
                 return false;
             }
         };
@@ -87,7 +93,6 @@ public class Invention2 {
         int green = (rgb & 0x0000ff00) >> 8;
         int blue = (rgb & 0x000000ff);
         Color PixelColor = new Color( red, green, blue );
-        System.out.println( PixelColor.toString() );
         return PixelColor;
     }
     private void paintOnePixel(int workingPixel, int workingRow){
@@ -102,7 +107,6 @@ public class Invention2 {
         while (pixelIterator < image.getWidth()) {
             paintOnePixel( pixelIterator, workingRow);
             pixelIterator = pixelIterator +1;
-            System.out.println( "DEBUG: Row Pixel Count:  " + pixelIterator);
         }
     }
     private void paintTheRows(){
@@ -112,16 +116,11 @@ public class Invention2 {
         for (int rowIterator = 0; rowIterator < image.getHeight(); rowIterator++) {
             paintOneRow( rowIterator);
             rowCount = rowCount + 1;
-            System.out.println( "DEBUG: Row Count:  " + rowCount );
+            //System.out.println( "DEBUG: Row Count:  " + rowCount );
             // Makes a new Row
             painter.moveTo( new Point2D.Double( 0, rowIterator ));
-            System.out.println("-------------------------------------------------");
-            System.out.println( "DEBUG: NEXT ROW" );
-            System.out.println("-------------------------------------------------");
+
             if (rowCount == image.getHeight()) {
-                System.out.println("-------------------------------------------------");
-                System.out.println( "Picture Finished Drawing");
-                System.out.println("-------------------------------------------------");
                 break;
             }
         }

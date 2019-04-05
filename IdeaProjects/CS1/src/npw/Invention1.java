@@ -88,7 +88,6 @@ public class Invention1 {
         while (pixelIterator < image.getWidth()) {
             paintOnePixel( pixelIterator, workingRow);
             pixelIterator = pixelIterator +1;
-            System.out.println( "DEBUG: Row Pixel Count:  " + pixelIterator);
         }
     }
     private void paintTheRows() throws IOException {
@@ -98,17 +97,9 @@ public class Invention1 {
         for (int rowIterator = 0; rowIterator < image.getHeight(); rowIterator++) {
             paintOneRow( rowIterator);
             rowCount = rowCount + 1;
-            System.out.println( "DEBUG: Row Count:  " + rowCount );
             // Makes a new Row
             painter.moveTo( new Point2D.Double( 0, rowIterator ));
-            System.out.println("-------------------------------------------------");
-            System.out.println( "DEBUG: NEXT ROW" );
-            System.out.println("-------------------------------------------------");
-
             if (rowCount == image.getHeight()) {
-            System.out.println("-------------------------------------------------");
-            System.out.println( "Picture Finished Drawing");
-            System.out.println("-------------------------------------------------");
                 break;
             }
         }
