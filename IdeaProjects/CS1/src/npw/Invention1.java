@@ -65,7 +65,6 @@ public class Invention1 {
         int green = (rgb & 0x0000ff00) >> 8;
         int blue = (rgb & 0x000000ff);
         Color PixelColor = new Color( red, green, blue );
-        System.out.println( PixelColor.toString() );
         return PixelColor;
     }
     private void paintOnePixel(int workingPixel, int workingRow) throws IOException {
