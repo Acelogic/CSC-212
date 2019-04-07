@@ -369,3 +369,20 @@ param {
 }
 
 
+.simpleDotsSize{    
+    width: 45%;
+    height: auto;
+  }
+
+.inventionSize{
+    width: 100%;
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stellaSize{ 
+    width: 45%;
+    height: auto;
+  }
