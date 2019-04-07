@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
-//TODO: WORKING AS INTENDED (PLEASE CHECK AGAIN)
+
 public class WordList {
     // VARIABLES LOCAL TO THE CLASS, AND HENCE GLOBAL TO THE METHODS
     private static final int LIMIT = 1000;
@@ -17,7 +17,7 @@ public class WordList {
 
     public static void main(String[] args) {
         try {
-            // ESTABLISH THE ARRAY OF NUMBERS
+            // ESTABLISH THE ARRAY OF WORDS
             readWords();
             // CHECK THE DATA
             // System.out.println("\nThe original list of words ...");
@@ -123,7 +123,6 @@ public class WordList {
     }
 
     private static void interpretSwapCommand() {
-
         int position1 = commandReader.nextInt();
         int position2 = commandReader.nextInt();
         String temp = words[position1 - 1];

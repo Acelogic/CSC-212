@@ -11,47 +11,46 @@ import java.util.Scanner;
 import static javax.swing.SwingUtilities.*;
 
 public class Stella {
+
+
     private Stella() {
         paintCanvas();
     }
+
     public static void main(String[] args) {
         invokeLater( Stella::new );
     }
+
     private void paintCanvas() {
         int squareCount = getNumber( "How many Squares to Draw" );
-        SPainter painter = new SPainter( "Stella", 800, 800 );
-        drawSquare( painter, squareCount );
+        int canvasSize = 800;
+        int squareSide = canvasSize - 100; // Square Size Constraint
+        int shrinkFactor = squareSide / squareCount;
+
+        SPainter painter = new SPainter( "Stella", canvasSize, canvasSize );
+        SSquare square = new SSquare( squareSide );
+
+        drawSquare( painter, squareCount, shrinkFactor, square );
     }
 
-    private void drawSquare(SPainter painter, int squareCount) {
-        int squareSide = 700;
+    private void drawSquare(SPainter painter, int nrOfSquares, int shrinkFactor, SSquare square) {
         boolean colorSwitchFlag = true;
-        int rgenColor1Count = 0;
-        int rgenColor2Count = 0;
-        Color rgenColor1 = randomColor();
-        Color rgenColor2 = randomColor();
-        SSquare square = new SSquare( squareSide );
-        for (int i = 0; i < squareCount; i++) {
-            System.out.println( "DEBUG: Drawing Something" ); // Debug
+        Color randomColor1 = randomColor();
+        Color randomColor2 = randomColor();
+
+        for (int i = 0; i < nrOfSquares; i++) {
             if (colorSwitchFlag == true) {
-                System.out.println( "DEBUG: Color 1 " ); // Debug
-                painter.setColor( rgenColor1 );
+                painter.setColor( randomColor1 );
                 painter.paint( square );
-                square.shrink( squareSide / squareCount );
+                square.shrink( shrinkFactor );
                 colorSwitchFlag = false;
-                rgenColor1Count = rgenColor1Count +1; // Debug
             } else {
-                System.out.println( "DEBUG: Color 2 " ); // Debug
-                painter.setColor( rgenColor2 );
+                painter.setColor( randomColor2 );
                 painter.paint( square );
-                square.shrink( squareSide/(double)squareCount );
+                square.shrink( shrinkFactor );
                 colorSwitchFlag = true;
-                rgenColor2Count = rgenColor2Count +1; // Debug
             }
         }
-        System.out.println("-------------------------------------------------");
-        System.out.println("DEBUG: "+rgenColor1Count + " Colors of Color Type " + rgenColor1.toString() + " was drawn"); // Debug
-        System.out.println("DEBUG: "+rgenColor2Count + " Colors of Color Type " + rgenColor2.toString() + " was drawn"); // Debug
     }
     private Color randomColor() {
         Random rgen = new Random();

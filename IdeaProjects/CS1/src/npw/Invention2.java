@@ -20,7 +20,7 @@ import java.util.Random;
 import static javax.swing.SwingUtilities.invokeLater;
 
 public class Invention2 {
-    //----- Field Vars and Objects  -----
+    //----- Fields / Global Vars and Objects  -----
     private String path = pathBuilder();
     private BufferedImage image = randomlyGetImageFromPath(path);
     private int height = image.getHeight();

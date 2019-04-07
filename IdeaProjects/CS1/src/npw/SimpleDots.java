@@ -15,7 +15,6 @@ import java.util.Scanner;
 import static javax.swing.SwingUtilities.invokeLater;
 
 public class SimpleDots {
-     private int columnCount;
      private String colorChose = getString( "What Color " );
      private int spacingFactor = getNumber("Dot Spacing");
      private int width = getNumber("Canvas Width in Pixels");
@@ -33,11 +32,13 @@ public class SimpleDots {
         // Establish the painter
         SPainter painter = new SPainter("SimpleDots", width, height);
         SCircle dot = new SCircle(5);
+
         // Move the painter to the upper left corner to get ready to paint the gradient
         painter.mfd(height/2);
         painter.tl(90);
         painter.mfd(width/2 - 10);
         painter.tl(90);
+
         // Paint it!
         paintGradient(painter, dot, height, width, spacingFactor);
     }
@@ -47,6 +48,7 @@ public class SimpleDots {
         Scanner scanner = new Scanner(nss);
         return scanner.nextInt();
     }
+
     private static String getString(String prompt) {
         String nss = JOptionPane.showInputDialog(null,prompt+"?");
         Scanner scanner = new Scanner(nss);
@@ -58,7 +60,7 @@ public class SimpleDots {
         // Calculate the number of columns. We want to fill the screen, but we don't want
         // any dots only half on the canvas, so we subtract some space.
         int nrOfCols = ( width / verticalSpacing ) - 2;
-        columnCount = 0;
+        int columnCount = 0;
         while (columnCount < nrOfCols){
             nextCol(painter, verticalSpacing);
             columnCount = columnCount + 1;
@@ -66,7 +68,6 @@ public class SimpleDots {
 
         }
     }
-
     private void paintOneDot(SPainter painter, SCircle dot){
         dynamicColor(painter);
         painter.paint(dot);
@@ -75,29 +76,14 @@ public class SimpleDots {
     private void paintColumn(SPainter painter, SCircle dot, int height) {
         int horizontalSpacing = spacingFactor;
         int displacement = 0;
-        int dotsPainted = -1; // Debug
+
         while(displacement < height) {
-
-            System.out.println("DEBUG: Calculation: " + horizontalSpacing +"px" + " + " + displacement +"px"); // Debug
-
             displacement = displacement + horizontalSpacing;
             painter.mfd(horizontalSpacing);
             paintOneDot(painter, dot);
-            dotsPainted = dotsPainted + 1;
-
-            //Debug Code
-            System.out.println("DEBUG: Total Distance Traveled: "+ displacement+"px");
-            System.out.println("DEBUG: Dots Painted: "+ dotsPainted);
-            System.out.println("DEBUG: Working Column: " + columnCount);
-            System.out.println("-------------------------------------------------");
         }
             // Make the method invariant with respect to painter position.
             painter.mbk(displacement);
-
-            //Debug Code
-            System.out.println("DEBUG: Spacing Factor: " + spacingFactor +"px");
-            System.out.println("DEBUG: Dot Array Size: " + dotsPainted + " x " + columnCount);
-            System.out.println("DEBUG: Total Dots Painted: " + dotsPainted * columnCount);
         }
 
     // Moves the painter to the next column.

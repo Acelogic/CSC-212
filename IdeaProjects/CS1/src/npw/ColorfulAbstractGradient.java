@@ -62,7 +62,8 @@ public class ColorfulAbstractGradient {
     }
 
     private void paintOneDot(SPainter painter, SCircle dot){
-        randomColor(painter);
+        // Change color before painting
+        painter.setColor(randomColor());
         painter.paint(dot);
     }
     // Dots are spaced tighter together near the bottom of the canvas.
@@ -91,11 +92,13 @@ public class ColorfulAbstractGradient {
         Random rgen = new Random();
         return rgen.nextInt(maxDistance);
     }
-    private void randomColor(SPainter painter){
+
+    // A random color method has to be made
+    private Color randomColor(){
         Random rgen = new Random();
-        int r = rgen.nextInt(255);
+        int r = rgen.nextInt(255); // bound of 0-255
         int g = rgen.nextInt(255);
         int b = rgen.nextInt(255);
-        painter.setColor(new Color(r,g,b));
+        return new Color(r,g,b);
     }
 }

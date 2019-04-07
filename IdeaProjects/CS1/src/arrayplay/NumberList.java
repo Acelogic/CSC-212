@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
-//TODO: WORKING AS INTENDED (PLEASE CHECK AGAIN)
+
 public class NumberList {
     // VARIABLES LOCAL TO THE CLASS, AND HENCE GLOBAL TO THE METHODS
     private static final int LIMIT = 1000;

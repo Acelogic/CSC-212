@@ -41,7 +41,7 @@ Invention1.java</font>
 <a name="l22"><span class="ln">22   </span></a><span class="s2">import static </span>javax.swing.SwingUtilities.*;
 <a name="l23"><span class="ln">23   </span></a>
 <a name="l24"><span class="ln">24   </span></a><span class="s2">public class </span>Invention1 {
-<a name="l25"><span class="ln">25   </span></a>    <span class="s0">//----- Fields Vars and Objects  -----</span>
+<a name="l25"><span class="ln">25   </span></a>    <span class="s0">//----- Fields / Global Vars and Objects  -----</span>
 <a name="l26"><span class="ln">26   </span></a>    <span class="s2">private </span>BufferedImage image = getImageFromPath();
 <a name="l27"><span class="ln">27   </span></a>    <span class="s2">private double </span>pixelSize = <span class="s3">1</span>;
 <a name="l28"><span class="ln">28   </span></a>    <span class="s2">private int </span>height = image.getHeight();
@@ -65,64 +65,66 @@ Invention1.java</font>
 <a name="l46"><span class="ln">46   </span></a>            }
 <a name="l47"><span class="ln">47   </span></a>        } );
 <a name="l48"><span class="ln">48   </span></a>    }
-<a name="l49"><span class="ln">49   </span></a>    <span class="s2">private </span>BufferedImage getImageFromPath() <span class="s2">throws </span>IOException {
-<a name="l50"><span class="ln">50   </span></a>        JFileChooser chooser = <span class="s2">new </span>JFileChooser();
-<a name="l51"><span class="ln">51   </span></a>        FileNameExtensionFilter filter = <span class="s2">new </span>FileNameExtensionFilter( <span class="s4">&quot;JPG,JPEG,PNG,&quot;</span>, <span class="s4">&quot;jpg&quot;</span>, <span class="s4">&quot;png&quot;</span>, <span class="s4">&quot;jpeg&quot; </span>);
-<a name="l52"><span class="ln">52   </span></a>        chooser.setFileFilter( filter );
-<a name="l53"><span class="ln">53   </span></a>        <span class="s2">int </span>returnVal = chooser.showOpenDialog( chooser );
-<a name="l54"><span class="ln">54   </span></a>        String path = <span class="s2">null</span>;
-<a name="l55"><span class="ln">55   </span></a>        <span class="s2">if </span>(returnVal == JFileChooser.APPROVE_OPTION) {
-<a name="l56"><span class="ln">56   </span></a>            path = chooser.getSelectedFile().getPath();
-<a name="l57"><span class="ln">57   </span></a>        }
-<a name="l58"><span class="ln">58   </span></a>        File file = <span class="s2">new </span>File( path );
-<a name="l59"><span class="ln">59   </span></a>        <span class="s2">return </span>ImageIO.read( file );
-<a name="l60"><span class="ln">60   </span></a>    }
-<a name="l61"><span class="ln">61   </span></a>
-<a name="l62"><span class="ln">62   </span></a>    <span class="s2">private </span>Color getPixelColor(<span class="s2">int </span>x, <span class="s2">int </span>y) {
-<a name="l63"><span class="ln">63   </span></a>        <span class="s2">int </span>rgb = image.getRGB( x, y );
-<a name="l64"><span class="ln">64   </span></a>        <span class="s2">int </span>red = (rgb &amp; <span class="s3">0x00ff0000</span>) &gt;&gt; <span class="s3">16</span>;
-<a name="l65"><span class="ln">65   </span></a>        <span class="s2">int </span>green = (rgb &amp; <span class="s3">0x0000ff00</span>) &gt;&gt; <span class="s3">8</span>;
-<a name="l66"><span class="ln">66   </span></a>        <span class="s2">int </span>blue = (rgb &amp; <span class="s3">0x000000ff</span>);
-<a name="l67"><span class="ln">67   </span></a>        Color PixelColor = <span class="s2">new </span>Color( red, green, blue );
-<a name="l68"><span class="ln">68   </span></a>        <span class="s2">return </span>PixelColor;
-<a name="l69"><span class="ln">69   </span></a>    }
-<a name="l70"><span class="ln">70   </span></a>    <span class="s2">private void </span>paintOnePixel(<span class="s2">int </span>workingPixel, <span class="s2">int </span>workingRow) <span class="s2">throws </span>IOException {
-<a name="l71"><span class="ln">71   </span></a>        Color pixelColor = getPixelColor( workingPixel, workingRow);
-<a name="l72"><span class="ln">72   </span></a>        painter.setColor( pixelColor );
-<a name="l73"><span class="ln">73   </span></a>        <span class="s0">//Changing this may make pictures generate faster</span>
-<a name="l74"><span class="ln">74   </span></a>        painter.mrt( <span class="s3">1 </span>);
-<a name="l75"><span class="ln">75   </span></a>
-<a name="l76"><span class="ln">76   </span></a>        <span class="s0">// Randomly use a square or circle as a pixel</span>
-<a name="l77"><span class="ln">77   </span></a>        Random rgen = <span class="s2">new </span>Random();
-<a name="l78"><span class="ln">78   </span></a>        <span class="s2">int </span>randomNum = rgen.nextInt( <span class="s3">1 </span>);
-<a name="l79"><span class="ln">79   </span></a>        <span class="s2">if </span>(randomNum == <span class="s3">1</span>) {
-<a name="l80"><span class="ln">80   </span></a>            painter.paint( squarePixel );
-<a name="l81"><span class="ln">81   </span></a>        } <span class="s2">else </span>{
-<a name="l82"><span class="ln">82   </span></a>            painter.paint( circlePixel );
-<a name="l83"><span class="ln">83   </span></a>        }
-<a name="l84"><span class="ln">84   </span></a>    }
-<a name="l85"><span class="ln">85   </span></a>    <span class="s2">private void </span>paintOneRow(<span class="s2">int </span>workingRow) <span class="s2">throws </span>IOException {
-<a name="l86"><span class="ln">86   </span></a>        <span class="s2">int </span>pixelIterator = <span class="s3">0</span>;
-<a name="l87"><span class="ln">87   </span></a>        <span class="s2">while </span>(pixelIterator &lt; image.getWidth()) {
-<a name="l88"><span class="ln">88   </span></a>            paintOnePixel( pixelIterator, workingRow);
-<a name="l89"><span class="ln">89   </span></a>            pixelIterator = pixelIterator +<span class="s3">1</span>;
-<a name="l90"><span class="ln">90   </span></a>        }
-<a name="l91"><span class="ln">91   </span></a>    }
-<a name="l92"><span class="ln">92   </span></a>    <span class="s2">private void </span>paintTheRows() <span class="s2">throws </span>IOException {
-<a name="l93"><span class="ln">93   </span></a>        <span class="s2">int </span>rowCount = <span class="s3">0</span>;
-<a name="l94"><span class="ln">94   </span></a>        <span class="s0">// Starts Off From Corner of Canvas</span>
-<a name="l95"><span class="ln">95   </span></a>        painter.moveTo( <span class="s2">new </span>Point2D.Double( <span class="s3">0</span>, <span class="s3">0 </span>) );
-<a name="l96"><span class="ln">96   </span></a>        <span class="s2">for </span>(<span class="s2">int </span>rowIterator = <span class="s3">0</span>; rowIterator &lt; image.getHeight(); rowIterator++) {
-<a name="l97"><span class="ln">97   </span></a>            paintOneRow( rowIterator);
-<a name="l98"><span class="ln">98   </span></a>            rowCount = rowCount + <span class="s3">1</span>;
-<a name="l99"><span class="ln">99   </span></a>            <span class="s0">// Makes a new Row</span>
-<a name="l100"><span class="ln">100  </span></a>            painter.moveTo( <span class="s2">new </span>Point2D.Double( <span class="s3">0</span>, rowIterator ));
-<a name="l101"><span class="ln">101  </span></a>            <span class="s2">if </span>(rowCount == image.getHeight()) {
-<a name="l102"><span class="ln">102  </span></a>                <span class="s2">break</span>;
-<a name="l103"><span class="ln">103  </span></a>            }
-<a name="l104"><span class="ln">104  </span></a>        }
-<a name="l105"><span class="ln">105  </span></a>    }
-<a name="l106"><span class="ln">106  </span></a>}
-<a name="l107"><span class="ln">107  </span></a></pre>
+<a name="l49"><span class="ln">49   </span></a>
+<a name="l50"><span class="ln">50   </span></a>    <span class="s0">//Make Program Compatible With Windows (I use windows :P )</span>
+<a name="l51"><span class="ln">51   </span></a>    <span class="s2">private </span>BufferedImage getImageFromPath() <span class="s2">throws </span>IOException {
+<a name="l52"><span class="ln">52   </span></a>        JFileChooser chooser = <span class="s2">new </span>JFileChooser();
+<a name="l53"><span class="ln">53   </span></a>        FileNameExtensionFilter filter = <span class="s2">new </span>FileNameExtensionFilter( <span class="s4">&quot;JPG,JPEG,PNG,&quot;</span>, <span class="s4">&quot;jpg&quot;</span>, <span class="s4">&quot;png&quot;</span>, <span class="s4">&quot;jpeg&quot; </span>);
+<a name="l54"><span class="ln">54   </span></a>        chooser.setFileFilter( filter );
+<a name="l55"><span class="ln">55   </span></a>        <span class="s2">int </span>returnVal = chooser.showOpenDialog( chooser );
+<a name="l56"><span class="ln">56   </span></a>        String path = <span class="s2">null</span>;
+<a name="l57"><span class="ln">57   </span></a>        <span class="s2">if </span>(returnVal == JFileChooser.APPROVE_OPTION) {
+<a name="l58"><span class="ln">58   </span></a>            path = chooser.getSelectedFile().getPath();
+<a name="l59"><span class="ln">59   </span></a>        }
+<a name="l60"><span class="ln">60   </span></a>        File file = <span class="s2">new </span>File( path );
+<a name="l61"><span class="ln">61   </span></a>        <span class="s2">return </span>ImageIO.read( file );
+<a name="l62"><span class="ln">62   </span></a>    }
+<a name="l63"><span class="ln">63   </span></a>
+<a name="l64"><span class="ln">64   </span></a>    <span class="s2">private </span>Color getPixelColor(<span class="s2">int </span>x, <span class="s2">int </span>y) {
+<a name="l65"><span class="ln">65   </span></a>        <span class="s2">int </span>rgb = image.getRGB( x, y );
+<a name="l66"><span class="ln">66   </span></a>        <span class="s2">int </span>red = (rgb &amp; <span class="s3">0x00ff0000</span>) &gt;&gt; <span class="s3">16</span>;
+<a name="l67"><span class="ln">67   </span></a>        <span class="s2">int </span>green = (rgb &amp; <span class="s3">0x0000ff00</span>) &gt;&gt; <span class="s3">8</span>;
+<a name="l68"><span class="ln">68   </span></a>        <span class="s2">int </span>blue = (rgb &amp; <span class="s3">0x000000ff</span>);
+<a name="l69"><span class="ln">69   </span></a>        Color PixelColor = <span class="s2">new </span>Color( red, green, blue );
+<a name="l70"><span class="ln">70   </span></a>        <span class="s2">return </span>PixelColor;
+<a name="l71"><span class="ln">71   </span></a>    }
+<a name="l72"><span class="ln">72   </span></a>    <span class="s2">private void </span>paintOnePixel(<span class="s2">int </span>workingPixel, <span class="s2">int </span>workingRow) <span class="s2">throws </span>IOException {
+<a name="l73"><span class="ln">73   </span></a>        Color pixelColor = getPixelColor( workingPixel, workingRow);
+<a name="l74"><span class="ln">74   </span></a>        painter.setColor( pixelColor );
+<a name="l75"><span class="ln">75   </span></a>        <span class="s0">//Changing this may make pictures generate faster</span>
+<a name="l76"><span class="ln">76   </span></a>        painter.mrt( <span class="s3">1 </span>);
+<a name="l77"><span class="ln">77   </span></a>
+<a name="l78"><span class="ln">78   </span></a>        <span class="s0">// Randomly use a square or circle as a pixel</span>
+<a name="l79"><span class="ln">79   </span></a>        Random rgen = <span class="s2">new </span>Random();
+<a name="l80"><span class="ln">80   </span></a>        <span class="s2">int </span>randomNum = rgen.nextInt( <span class="s3">1 </span>);
+<a name="l81"><span class="ln">81   </span></a>        <span class="s2">if </span>(randomNum == <span class="s3">1</span>) {
+<a name="l82"><span class="ln">82   </span></a>            painter.paint( squarePixel );
+<a name="l83"><span class="ln">83   </span></a>        } <span class="s2">else </span>{
+<a name="l84"><span class="ln">84   </span></a>            painter.paint( circlePixel );
+<a name="l85"><span class="ln">85   </span></a>        }
+<a name="l86"><span class="ln">86   </span></a>    }
+<a name="l87"><span class="ln">87   </span></a>    <span class="s2">private void </span>paintOneRow(<span class="s2">int </span>workingRow) <span class="s2">throws </span>IOException {
+<a name="l88"><span class="ln">88   </span></a>        <span class="s2">int </span>pixelIterator = <span class="s3">0</span>;
+<a name="l89"><span class="ln">89   </span></a>        <span class="s2">while </span>(pixelIterator &lt; image.getWidth()) {
+<a name="l90"><span class="ln">90   </span></a>            paintOnePixel( pixelIterator, workingRow);
+<a name="l91"><span class="ln">91   </span></a>            pixelIterator = pixelIterator +<span class="s3">1</span>;
+<a name="l92"><span class="ln">92   </span></a>        }
+<a name="l93"><span class="ln">93   </span></a>    }
+<a name="l94"><span class="ln">94   </span></a>    <span class="s2">private void </span>paintTheRows() <span class="s2">throws </span>IOException {
+<a name="l95"><span class="ln">95   </span></a>        <span class="s2">int </span>rowCount = <span class="s3">0</span>;
+<a name="l96"><span class="ln">96   </span></a>        <span class="s0">// Starts Off From Corner of Canvas</span>
+<a name="l97"><span class="ln">97   </span></a>        painter.moveTo( <span class="s2">new </span>Point2D.Double( <span class="s3">0</span>, <span class="s3">0 </span>) );
+<a name="l98"><span class="ln">98   </span></a>        <span class="s2">for </span>(<span class="s2">int </span>rowIterator = <span class="s3">0</span>; rowIterator &lt; image.getHeight(); rowIterator++) {
+<a name="l99"><span class="ln">99   </span></a>            paintOneRow( rowIterator);
+<a name="l100"><span class="ln">100  </span></a>            rowCount = rowCount + <span class="s3">1</span>;
+<a name="l101"><span class="ln">101  </span></a>            <span class="s0">// Makes a new Row</span>
+<a name="l102"><span class="ln">102  </span></a>            painter.moveTo( <span class="s2">new </span>Point2D.Double( <span class="s3">0</span>, rowIterator ));
+<a name="l103"><span class="ln">103  </span></a>            <span class="s2">if </span>(rowCount == image.getHeight()) {
+<a name="l104"><span class="ln">104  </span></a>                <span class="s2">break</span>;
+<a name="l105"><span class="ln">105  </span></a>            }
+<a name="l106"><span class="ln">106  </span></a>        }
+<a name="l107"><span class="ln">107  </span></a>    }
+<a name="l108"><span class="ln">108  </span></a>}
+<a name="l109"><span class="ln">109  </span></a></pre>
 </body>
 </html>

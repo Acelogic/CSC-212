@@ -18,7 +18,7 @@ public class WordList {
 
     public static void main(String[] args) {
         try {
-            // ESTABLISH THE ARRAY OF NUMBERS
+            // ESTABLISH THE ARRAY OF Words
             readWords();
             // CHECK THE DATA
             // System.out.println("\nThe original list of words ...");
@@ -126,13 +126,9 @@ public class WordList {
     }
 
     private static void interpretSwapCommand() {
-        // TODO: Swapping not working what so ever
-        int position1 = commandReader.nextInt();
-        int position2 = commandReader.nextInt();
-        String temp = words.get(position1 - 1);
-        String wordPosContainer =  words.get(position1 - 1);
-         wordPosContainer = words.get(position2 - 1);
-         temp = words.get(position2 - 1) ;
+        int position1 = commandReader.nextInt() -1; // subtraction of 1 so we won't have to use "exact" values as index input
+        int position2 = commandReader.nextInt() -1;
+        words.set(position1, words.set(position2 , words.get(position1))); // swapping is here
     }
 
     private static void interpretAddCommand() {
@@ -165,20 +161,17 @@ public class WordList {
         }
     }
 
-    // TODO: Adding does not work for first and second
+    // TODO: Fixed addLast() and addFirst()
 
     private static void addLast() {
-        String iteratingString = words.get(numberOfWords);
-         iteratingString = commandReader.next();
+       words.add(commandReader.next()); //  ArrayList.add adds elements to the end of the array
+        // words.add(words.size(), commandReader.next()); No need to do this Arraylist.add adds to the end by default
     }
 
     private static void addFirst() {
-
         for (int x = numberOfWords; x > 0; x = x - 1) {
             words.get(x - 1);
-
         }
-        String zeroIndex  = words.get(0);
-        zeroIndex = commandReader.next();
+        words.add(0, commandReader.next());
     }
 }

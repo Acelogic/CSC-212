@@ -22,7 +22,7 @@ import java.awt.image.BufferedImage;
 import static javax.swing.SwingUtilities.*;
 
 public class Invention1 {
-    //----- Fields Vars and Objects  -----
+    //----- Fields / Global Vars and Objects  -----
     private BufferedImage image = getImageFromPath();
     private double pixelSize = 1;
     private int height = image.getHeight();
@@ -46,6 +46,8 @@ public class Invention1 {
             }
         } );
     }
+
+    //Make Program Compatible With Windows (I use windows :P )
     private BufferedImage getImageFromPath() throws IOException {
         JFileChooser chooser = new JFileChooser();
         FileNameExtensionFilter filter = new FileNameExtensionFilter( "JPG,JPEG,PNG,", "jpg", "png", "jpeg" );

@@ -81,42 +81,45 @@ ColorfulAbstractGradient.java</font>
 <a name="l62"><span class="ln">62   </span></a>    }
 <a name="l63"><span class="ln">63   </span></a>
 <a name="l64"><span class="ln">64   </span></a>    <span class="s2">private void </span>paintOneDot(SPainter painter, SCircle dot){
-<a name="l65"><span class="ln">65   </span></a>        randomColor(painter);
-<a name="l66"><span class="ln">66   </span></a>        painter.paint(dot);
-<a name="l67"><span class="ln">67   </span></a>    }
-<a name="l68"><span class="ln">68   </span></a>    <span class="s0">// Dots are spaced tighter together near the bottom of the canvas.</span>
-<a name="l69"><span class="ln">69   </span></a>    <span class="s2">private void </span>paintColumn(SPainter painter, SCircle dot, <span class="s2">int </span>height) {
-<a name="l70"><span class="ln">70   </span></a>        <span class="s2">int </span>travel = <span class="s4">0</span>;
-<a name="l71"><span class="ln">71   </span></a>        <span class="s2">int </span>totalDistanceTraveled = <span class="s4">0</span>;
-<a name="l72"><span class="ln">72   </span></a>
-<a name="l73"><span class="ln">73   </span></a>        <span class="s0">// Paint a row with decreasing distance between dots.</span>
-<a name="l74"><span class="ln">74   </span></a>        <span class="s2">while</span>(totalDistanceTraveled &lt; height - (dot.radius() * <span class="s4">3</span>)) {
-<a name="l75"><span class="ln">75   </span></a>            travel = randomDistance((height - totalDistanceTraveled) / <span class="s4">4</span>);
-<a name="l76"><span class="ln">76   </span></a>            totalDistanceTraveled = totalDistanceTraveled + travel;
-<a name="l77"><span class="ln">77   </span></a>            painter.mfd(travel);
-<a name="l78"><span class="ln">78   </span></a>            paintOneDot(painter, dot);
-<a name="l79"><span class="ln">79   </span></a>        }
-<a name="l80"><span class="ln">80   </span></a>
-<a name="l81"><span class="ln">81   </span></a>        <span class="s0">// Make the method invariant with respect to painter position.</span>
-<a name="l82"><span class="ln">82   </span></a>        painter.mbk(totalDistanceTraveled);
-<a name="l83"><span class="ln">83   </span></a>    }
-<a name="l84"><span class="ln">84   </span></a>    <span class="s0">// Moves the painter to the next column.</span>
-<a name="l85"><span class="ln">85   </span></a>    <span class="s2">private void </span>nextCol(SPainter painter, <span class="s2">int </span>colWidth){
-<a name="l86"><span class="ln">86   </span></a>        painter.tl(<span class="s4">90</span>);
-<a name="l87"><span class="ln">87   </span></a>        painter.mfd(colWidth);
-<a name="l88"><span class="ln">88   </span></a>        painter.tr(<span class="s4">90</span>);
-<a name="l89"><span class="ln">89   </span></a>    }
-<a name="l90"><span class="ln">90   </span></a>    <span class="s2">private int </span>randomDistance(<span class="s2">int </span>maxDistance){
-<a name="l91"><span class="ln">91   </span></a>        Random rgen = <span class="s2">new </span>Random();
-<a name="l92"><span class="ln">92   </span></a>        <span class="s2">return </span>rgen.nextInt(maxDistance);
-<a name="l93"><span class="ln">93   </span></a>    }
-<a name="l94"><span class="ln">94   </span></a>    <span class="s2">private void </span>randomColor(SPainter painter){
-<a name="l95"><span class="ln">95   </span></a>        Random rgen = <span class="s2">new </span>Random();
-<a name="l96"><span class="ln">96   </span></a>        <span class="s2">int </span>r = rgen.nextInt(<span class="s4">255</span>);
-<a name="l97"><span class="ln">97   </span></a>        <span class="s2">int </span>g = rgen.nextInt(<span class="s4">255</span>);
-<a name="l98"><span class="ln">98   </span></a>        <span class="s2">int </span>b = rgen.nextInt(<span class="s4">255</span>);
-<a name="l99"><span class="ln">99   </span></a>        painter.setColor(<span class="s2">new </span>Color(r,g,b));
-<a name="l100"><span class="ln">100  </span></a>    }
-<a name="l101"><span class="ln">101  </span></a>}</pre>
+<a name="l65"><span class="ln">65   </span></a>        <span class="s0">// Change color before painting</span>
+<a name="l66"><span class="ln">66   </span></a>        painter.setColor(randomColor());
+<a name="l67"><span class="ln">67   </span></a>        painter.paint(dot);
+<a name="l68"><span class="ln">68   </span></a>    }
+<a name="l69"><span class="ln">69   </span></a>    <span class="s0">// Dots are spaced tighter together near the bottom of the canvas.</span>
+<a name="l70"><span class="ln">70   </span></a>    <span class="s2">private void </span>paintColumn(SPainter painter, SCircle dot, <span class="s2">int </span>height) {
+<a name="l71"><span class="ln">71   </span></a>        <span class="s2">int </span>travel = <span class="s4">0</span>;
+<a name="l72"><span class="ln">72   </span></a>        <span class="s2">int </span>totalDistanceTraveled = <span class="s4">0</span>;
+<a name="l73"><span class="ln">73   </span></a>
+<a name="l74"><span class="ln">74   </span></a>        <span class="s0">// Paint a row with decreasing distance between dots.</span>
+<a name="l75"><span class="ln">75   </span></a>        <span class="s2">while</span>(totalDistanceTraveled &lt; height - (dot.radius() * <span class="s4">3</span>)) {
+<a name="l76"><span class="ln">76   </span></a>            travel = randomDistance((height - totalDistanceTraveled) / <span class="s4">4</span>);
+<a name="l77"><span class="ln">77   </span></a>            totalDistanceTraveled = totalDistanceTraveled + travel;
+<a name="l78"><span class="ln">78   </span></a>            painter.mfd(travel);
+<a name="l79"><span class="ln">79   </span></a>            paintOneDot(painter, dot);
+<a name="l80"><span class="ln">80   </span></a>        }
+<a name="l81"><span class="ln">81   </span></a>
+<a name="l82"><span class="ln">82   </span></a>        <span class="s0">// Make the method invariant with respect to painter position.</span>
+<a name="l83"><span class="ln">83   </span></a>        painter.mbk(totalDistanceTraveled);
+<a name="l84"><span class="ln">84   </span></a>    }
+<a name="l85"><span class="ln">85   </span></a>    <span class="s0">// Moves the painter to the next column.</span>
+<a name="l86"><span class="ln">86   </span></a>    <span class="s2">private void </span>nextCol(SPainter painter, <span class="s2">int </span>colWidth){
+<a name="l87"><span class="ln">87   </span></a>        painter.tl(<span class="s4">90</span>);
+<a name="l88"><span class="ln">88   </span></a>        painter.mfd(colWidth);
+<a name="l89"><span class="ln">89   </span></a>        painter.tr(<span class="s4">90</span>);
+<a name="l90"><span class="ln">90   </span></a>    }
+<a name="l91"><span class="ln">91   </span></a>    <span class="s2">private int </span>randomDistance(<span class="s2">int </span>maxDistance){
+<a name="l92"><span class="ln">92   </span></a>        Random rgen = <span class="s2">new </span>Random();
+<a name="l93"><span class="ln">93   </span></a>        <span class="s2">return </span>rgen.nextInt(maxDistance);
+<a name="l94"><span class="ln">94   </span></a>    }
+<a name="l95"><span class="ln">95   </span></a>
+<a name="l96"><span class="ln">96   </span></a>    <span class="s0">// A random color method has to be made</span>
+<a name="l97"><span class="ln">97   </span></a>    <span class="s2">private </span>Color randomColor(){
+<a name="l98"><span class="ln">98   </span></a>        Random rgen = <span class="s2">new </span>Random();
+<a name="l99"><span class="ln">99   </span></a>        <span class="s2">int </span>r = rgen.nextInt(<span class="s4">255</span>); <span class="s0">// bound of 0-255</span>
+<a name="l100"><span class="ln">100  </span></a>        <span class="s2">int </span>g = rgen.nextInt(<span class="s4">255</span>);
+<a name="l101"><span class="ln">101  </span></a>        <span class="s2">int </span>b = rgen.nextInt(<span class="s4">255</span>);
+<a name="l102"><span class="ln">102  </span></a>        <span class="s2">return new </span>Color(r,g,b);
+<a name="l103"><span class="ln">103  </span></a>    }
+<a name="l104"><span class="ln">104  </span></a>}</pre>
 </body>
 </html>

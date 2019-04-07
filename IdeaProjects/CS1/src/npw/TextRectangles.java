@@ -8,18 +8,16 @@ public class TextRectangles {
         for (int i = 0; i < nrOfColumns; i++) {
             System.out.print("*");
         }
-        System.out.println("");
-    }
 
+    }
     private static void drawRectangle(int nrOfRows, int nrOfColumns) {
         int i = 1;
         while (i <= nrOfRows) {
             drawOneRow(nrOfColumns);
+            System.out.println("");
             i = i + 1;
         }
-
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Run:");
