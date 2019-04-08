@@ -70,25 +70,72 @@ public class Chromesthesia {
 
     // METHODS PERTAINING TO THE CHROMESTHETIC PITCHES
     private static Pitch[] establishPitches(SPainter painter) {
-        Pitch[] pitches = new Pitch[9];
-        Pitch pitchMiddleC = new Pitch( "C", painter );
+        int asMuchPitchesAsWeNeed = 21;
+        Pitch[] pitches = new Pitch[asMuchPitchesAsWeNeed];
+
+        Pitch pitchMiddleC = new Pitch( "C", painter);
         pitches[0] = pitchMiddleC;
-        Pitch pitchLowC = new Pitch( "C,", painter );
+
+        Pitch pitchLowC = new Pitch( "C,", painter);
         pitches[1] = pitchLowC;
-        Pitch pitchHighC = new Pitch( "c", painter );
+
+        Pitch pitchHighC = new Pitch( "c", painter);
         pitches[2] = pitchHighC;
-        Pitch pitchMiddleD = new Pitch( "D", painter );
+
+        Pitch pitchMiddleD = new Pitch( "D", painter);
         pitches[3] = pitchMiddleD;
-        Pitch pitchLowD = new Pitch( "D,", painter );
+
+        Pitch pitchLowD = new Pitch( "D,", painter);
         pitches[4] = pitchLowD;
-        Pitch pitchHighD = new Pitch( "d", painter );
+
+        Pitch pitchHighD = new Pitch( "d", painter);
         pitches[5] = pitchHighD;
-        Pitch pitchMiddleE = new Pitch( "E", painter );
+
+        Pitch pitchMiddleE = new Pitch( "E", painter);
         pitches[6] = pitchMiddleE;
-        Pitch pitchLowE = new Pitch( "E,", painter );
+
+        Pitch pitchLowE = new Pitch( "E,", painter);
         pitches[7] = pitchLowE;
-        Pitch pitchHighE = new Pitch( "e", painter );
+
+        Pitch pitchHighE = new Pitch( "e", painter);
         pitches[8] = pitchHighE;
+
+        Pitch pitchMiddleF = new Pitch("F", painter);
+        pitches[9] = pitchMiddleF;
+
+        Pitch pitchLowF = new Pitch("F,", painter);
+        pitches[10] = pitchLowF;
+
+        Pitch pitchHighF = new Pitch( "f", painter);
+        pitches[11] = pitchHighF;
+
+        Pitch pitchMiddleG = new Pitch("G", painter);
+        pitches[12] = pitchMiddleG;
+
+        Pitch pitchLowG = new Pitch("G,", painter);
+        pitches[13] = pitchLowG;
+
+        Pitch pitchHighG = new Pitch( "g", painter);
+        pitches[14] = pitchHighG;
+
+        Pitch pitchMiddleA = new Pitch("A", painter);
+        pitches[15] = pitchMiddleA;
+
+        Pitch pitchLowA = new Pitch("A,", painter);
+        pitches[16] = pitchLowA;
+
+        Pitch pitchHighA = new Pitch( "a", painter);
+        pitches[17] = pitchHighA;
+
+        Pitch pitchMiddleB = new Pitch("B", painter);
+        pitches[18] = pitchMiddleB;
+
+        Pitch pitchLowB = new Pitch("B,", painter);
+        pitches[19] = pitchLowB;
+
+        Pitch pitchHighB = new Pitch( "b", painter);
+        pitches[20] = pitchHighB;
+
         return pitches;
     }
 

@@ -47,7 +47,7 @@ public class Pitch {
     private SNote createNoteForThisPitch(String abcPitchClassName) {
         SNote note = new SNote();
         if (abcPitchClassName.equals( "C" )) {
-// nothing to do
+// TODO: Fix Musical Notes for new pitches
         } else if (abcPitchClassName.equals( "C," )) {
             note.lp( 7 );
         } else if (abcPitchClassName.equals( "c" )) {
@@ -75,7 +75,16 @@ public class Pitch {
             return Color.GREEN;
         } else if (letter.equals( "E" )) {
             return new Color( 127, 0, 127 );
-        } else {
+        } else if (letter.equals( "F" )) {
+            return Color.RED;
+        } else if (letter.equals( "G" )) {
+            return Color.CYAN;
+        } else if (letter.equals( "A" )) {
+            return Color.YELLOW;
+        } else if (letter.equals( "B" )) {
+            return Color.ORANGE;
+        }
+        else {
             return Color.BLACK;
         }
     }
