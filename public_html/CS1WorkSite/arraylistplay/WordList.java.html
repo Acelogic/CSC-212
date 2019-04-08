@@ -179,20 +179,17 @@ WordList.java</font>
 <a name="l160"><span class="ln">160  </span></a>            System.out.println(element);
 <a name="l161"><span class="ln">161  </span></a>        }
 <a name="l162"><span class="ln">162  </span></a>    }
-<a name="l163"><span class="ln">163  </span></a>
-<a name="l164"><span class="ln">164  </span></a>    <span class="s0">// TODO: Fixed addLast() and addFirst()</span>
-<a name="l165"><span class="ln">165  </span></a>
-<a name="l166"><span class="ln">166  </span></a>    <span class="s2">private static void </span>addLast() {
-<a name="l167"><span class="ln">167  </span></a>       words.add(commandReader.next()); <span class="s0">//  ArrayList.add adds elements to the end of the array</span>
-<a name="l168"><span class="ln">168  </span></a>        // words.add(words.size(), commandReader.next()); No need to do this Arraylist.add adds to the end by default
-<a name="l169"><span class="ln">169  </span></a>    }
-<a name="l170"><span class="ln">170  </span></a>
-<a name="l171"><span class="ln">171  </span></a>    <span class="s2">private static void </span>addFirst() {
-<a name="l172"><span class="ln">172  </span></a>        <span class="s2">for </span>(<span class="s2">int </span>x = numberOfWords; x &gt; <span class="s3">0</span>; x = x - <span class="s3">1</span>) {
-<a name="l173"><span class="ln">173  </span></a>            words.get(x - <span class="s3">1</span>);
-<a name="l174"><span class="ln">174  </span></a>        }
-<a name="l175"><span class="ln">175  </span></a>        words.add(<span class="s3">0</span>, commandReader.next());
-<a name="l176"><span class="ln">176  </span></a>    }
-<a name="l177"><span class="ln">177  </span></a>}</pre>
+<a name="l163"><span class="ln">163  </span></a>    
+<a name="l164"><span class="ln">164  </span></a>    <span class="s2">private static void </span>addLast() {
+<a name="l165"><span class="ln">165  </span></a>       words.add(commandReader.next()); 
+<a name="l166"><span class="ln">166  </span></a>    }
+<a name="l167"><span class="ln">167  </span></a>
+<a name="l168"><span class="ln">168  </span></a>    <span class="s2">private static void </span>addFirst() {
+<a name="l169"><span class="ln">169  </span></a>        <span class="s2">for </span>(<span class="s2">int </span>x = numberOfWords; x &gt; <span class="s3">0</span>; x = x - <span class="s3">1</span>) {
+<a name="l170"><span class="ln">170  </span></a>            words.get(x - <span class="s3">1</span>);
+<a name="l171"><span class="ln">171  </span></a>        }
+<a name="l172"><span class="ln">172  </span></a>        words.add(<span class="s3">0</span>, commandReader.next());
+<a name="l173"><span class="ln">173  </span></a>    }
+<a name="l174"><span class="ln">174  </span></a>}</pre>
 </body>
 </html>

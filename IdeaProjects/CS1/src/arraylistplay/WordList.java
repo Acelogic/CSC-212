@@ -128,7 +128,7 @@ public class WordList {
     private static void interpretSwapCommand() {
         int position1 = commandReader.nextInt() -1; // subtraction of 1 so we won't have to use "exact" values as index input
         int position2 = commandReader.nextInt() -1;
-        words.set(position1, words.set(position2 , words.get(position1))); // swapping is here
+        words.set(position1, words.set(position2 , words.get(position1))); // swapping is here  (no Java.Util.Collections.swap needed)
     }
 
     private static void interpretAddCommand() {
@@ -146,7 +146,6 @@ public class WordList {
 
     private static void interpretClearCommand(){
         int intelliJConsoleHistorySize = 300;
-
         for (int i = 0; i < intelliJConsoleHistorySize;++i) {
             System.out.println();
 
@@ -161,17 +160,11 @@ public class WordList {
         }
     }
 
-    // TODO: Fixed addLast() and addFirst()
-
     private static void addLast() {
-       words.add(commandReader.next()); //  ArrayList.add adds elements to the end of the array
-        // words.add(words.size(), commandReader.next()); No need to do this Arraylist.add adds to the end by default
+       words.add(commandReader.next()); // No need to have words.size() as a parameter (ArrayList.add appends elements to the bottom of the array)
     }
 
     private static void addFirst() {
-        for (int x = numberOfWords; x > 0; x = x - 1) {
-            words.get(x - 1);
-        }
         words.add(0, commandReader.next());
     }
 }
