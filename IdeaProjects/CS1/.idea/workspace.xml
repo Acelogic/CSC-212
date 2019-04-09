@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a2204fa-4941-46a4-a0cb-12513e11b4e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arraylistplay/WordList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arraylistplay/WordList.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/public_html/CS1WorkSite/arraylistplay/WordList.java.html" beforeDir="false" afterPath="$USER_HOME$/public_html/CS1WorkSite/arraylistplay/WordList.java.html" afterDir="false" />
-    </list>
+    <list default="true" id="7a2204fa-4941-46a4-a0cb-12513e11b4e1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,23 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/npw/HirstDots.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/arrayplay/WordList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1127">
-              <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1362">
+              <caret line="84" column="32" lean-forward="true" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -51,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/arraylistplay/WordList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="322">
+              <caret line="136" column="22" lean-forward="true" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3557#3558#0" expanded="true" />
@@ -62,20 +46,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/arraylistplay/ReverseCopy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+            <state relative-caret-position="719">
+              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/people/Person.java">
+        <entry file="file://$PROJECT_DIR$/src/shapes/GraySpace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
-              <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+            <state relative-caret-position="-638">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shapes/ShapesThing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-316">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -196,7 +189,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="CS1" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="CS1" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane" />
       <pane id="PackagesPane">
         <subPane>
@@ -208,7 +211,7 @@
             <path>
               <item name="CS1" type="58d84e3e:PackageViewProjectNode" />
               <item name="CS1" type="616d4139:PackageViewModuleNode" />
-              <item name="arraylistplay" type="1f31426a:PackageElementNode" />
+              <item name="npw" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -240,9 +243,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WordList (1)">
-    <configuration name="AbstractGradient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="npw.AbstractGradient" />
+  <component name="RunManager" selected="Application.HirstDots">
+    <configuration name="HirstDots" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="npw.HirstDots" />
       <module name="CS1" />
       <extension name="coverage">
         <pattern>
@@ -308,11 +311,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HirstDots" />
         <item itemvalue="Application.WordList (1)" />
         <item itemvalue="Application.NumberList" />
         <item itemvalue="Application.WordList" />
         <item itemvalue="Application.Invention2" />
-        <item itemvalue="Application.AbstractGradient" />
       </list>
     </recent_temporary>
   </component>
@@ -353,12 +356,12 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" sideWeight="0.50709605" visible="true" weight="0.31664965" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.50709605" weight="0.31664965" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5030404" side_tool="true" weight="0.37206933" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32852387" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5474891" side_tool="true" weight="0.38735983" />
-      <window_info anchor="bottom" x="921" y="258" width="928" height="1020" id="Run" order="10" sideWeight="0.45071983" weight="0.43132803" />
-      <window_info anchor="bottom" id="Structure" order="11" sideWeight="0.49290392" side_tool="true" visible="true" weight="0.31664965" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5496725" side_tool="true" visible="true" weight="0.27068436" />
+      <window_info active="true" anchor="bottom" x="921" y="258" width="928" height="1020" id="Run" order="10" sideWeight="0.45032752" visible="true" weight="0.27068436" />
+      <window_info anchor="bottom" id="Structure" order="11" sideWeight="0.5496725" side_tool="true" weight="0.4310521" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" sideWeight="0.49949032" weight="0.2498618" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -607,31 +610,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/npw/HirstDots.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/arrayplay/WordList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1127">
           <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/arraylistplay/WordList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3587#3588#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -686,8 +670,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/arraylistplay/ReverseCopy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        <state relative-caret-position="719">
+          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shapes/GraySpace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-638">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shapes/ShapesThing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-316">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/arraylistplay/WordList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="136" column="22" lean-forward="true" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3557#3558#0" expanded="true" />
+            <element signature="e#3587#3588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/npw/HirstDots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1362">
+          <caret line="84" column="32" lean-forward="true" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
         </state>
       </provider>
     </entry>
