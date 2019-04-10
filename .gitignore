@@ -45,8 +45,9 @@ lib/
 tmux_tmp/
 public_html/index.html
 out/
+.idea/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 #Things to Keep
-!.idea/
+
 !.gitignore
