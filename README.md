@@ -6,8 +6,6 @@ This course provided an introduction to programming and computation, including t
 Main: http://www.cs.oswego.edu/~mcruz/CS1WorkSite/
 <br />
 Mirror: https://mcruz.me/CS1WorkSite/index.html 
-
-# Worksite Picture
 ![alt text](https://i.imgur.com/du2zU4t.png)
 
 # How to Compile ? 
