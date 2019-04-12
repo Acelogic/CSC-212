@@ -1,5 +1,6 @@
 # CSC-212 💾
-Principals of Programming Course Work.
+This course provided an introduction to programming and computation, including the concepts and usage of expressions, variables, control structures, functions, compound types, classes, objects, and I/O in a high-level programming language, along with their roles in implementing programs to solve common problems.
+
 
 # Course Worksite
 Main: http://www.cs.oswego.edu/~mcruz/CS1WorkSite/
