@@ -1,4 +1,4 @@
-package examtwopractice;
+package ExamTwoPractice;
 
 public class SuperficialSignatures {
 }

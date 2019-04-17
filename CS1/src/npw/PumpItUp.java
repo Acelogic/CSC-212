@@ -18,7 +18,6 @@ static double sideOfSquare;
 
     public void paintRedSquares(SPainter painter, SSquare square){
         painter.setColor(Color.RED);
-
         painter.mfd(sideOfSquare);
         painter.mlt(sideOfSquare);
         painter.paint(square);

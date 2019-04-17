@@ -1,8 +1,6 @@
-package examtwopractice;
+package ExamTwoPractice;
 
-import java.util.ArrayList;
-
-public class FortoWhile {
+public class ForToWhile {
 
     public static void main(String[] args) {
         String[] words = {"TestWord1", "TestWord2"};
@@ -11,7 +9,6 @@ public class FortoWhile {
             String word = words[x];
             System.out.println(word);
         }
-
 
         // Conversion to while loop
 

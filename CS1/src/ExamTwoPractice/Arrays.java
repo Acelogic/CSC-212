@@ -1,4 +1,4 @@
-package examtwopractice;
+package ExamTwoPractice;
 
 public class Arrays {
     public static void main(String[] args) {

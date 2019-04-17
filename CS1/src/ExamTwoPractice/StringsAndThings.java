@@ -1,6 +1,4 @@
-package examtwopractice;
-
-import java.util.ArrayList;
+package ExamTwoPractice;
 
 public class StringsAndThings {
 
