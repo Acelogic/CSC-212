@@ -1,9 +1,10 @@
 package ExamTwoPractice;
 
+import java.sql.SQLOutput;
+
 public class Arrays {
     public static void main(String[] args) {
         //Part A
-
         double[] numbers = {-1.0, -2.0, -3.0, -4.0, -5.0, 1.0, 2.0, 3.0, 4.0, 5.0};
         System.out.println(numbers.length);
 
@@ -12,12 +13,10 @@ public class Arrays {
         double first = numbers[0];
 
         // Part C
-
         double last = numbers[numbers.length - 1];
 
         // Part D ( in 3 Examples)
-        System.out.println("PART D: ");
-            // For Each Loop Example
+            // For Each Loop Example (The Most Easiest One TBH)
             for (double numberElement : numbers)
                 if (numberElement > 0) {
                     System.out.println("For Each Loop: " + numberElement);
@@ -31,8 +30,7 @@ public class Arrays {
                     i++;
                 }
                 else{
-                    // We want nothing printed here
-                    // System.out.println("While Loop: Negative Number Read: " +numbers[i]);
+                         // We want nothing printed here
                     i++; // But we still have to increment the number
                 }
             }
@@ -46,7 +44,7 @@ public class Arrays {
 
         }
 
-        //
+
 
 
 

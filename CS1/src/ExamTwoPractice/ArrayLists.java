@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class ArrayLists {
     public static void main(String[] args) {
 
-        ArrayList<String> words = new ArrayList<String>();
+        ArrayList<String> words = new ArrayList<>();
+
         // Arbitrary Characters just for part D
         words.add("Go lshnflfsbnfs");
         words.add("C");
@@ -17,7 +18,7 @@ public class ArrayLists {
 
 
         //Part A
-        System.out.println(words.size());
+        System.out.println("Number Of Words in Array: " + words.size());
 
         //Part B
         String first = words.get(0);
@@ -25,18 +26,18 @@ public class ArrayLists {
         //Part C
         String last = words.get(words.size() - 1);
 
-        //Part D
-        // For Each Loop
+        //Part D ( in 3 Examples)
+        // For Each Loop (The Most Easiest One TBH)
         for (String element : words) {
             if (element.length() >= 7) {
-                System.out.println("For Each Loop: " + element);
+                System.out.println(element);
             }
         }
         // While Loop
         int i = 0;
         while (i < words.size()) {
             if (words.get(i).length() >= 7) {
-                System.out.println("While Loop: " + words.get(i));
+                System.out.println(words.get(i));
                 i++;
             }
             else {
@@ -46,7 +47,7 @@ public class ArrayLists {
         // For Loop
         for (int j = 0; j < words.size(); j++) {
             if (words.get(j).length() >= 7) {
-                System.out.println("For Loop: " + words.get(j));
+                System.out.println(words.get(j));
             }
         }
     }

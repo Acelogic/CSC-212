@@ -20,7 +20,7 @@ static double sideOfSquare;
         painter.setColor(Color.RED);
         painter.mfd(sideOfSquare);
         painter.mlt(sideOfSquare);
-        painter.paint(square);
+        painter.paint(square); 
         painter.moveToCenter();
 
         painter.mfd(sideOfSquare);

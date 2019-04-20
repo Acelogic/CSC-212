@@ -7,7 +7,7 @@ public class StringsAndThings {
         String animal1 = "elephant";
         String animal2 = "eagle";
 
-        String first = animal1.substring(0);
+        String first = animal1.substring(0,1);
 
         // Part B
         String last = animal2.substring(animal2.length() - 1);
@@ -17,7 +17,6 @@ public class StringsAndThings {
 
         // Part D
         String animal;
-
         if (animal1.length() > animal2.length()) {
             animal = animal1;
         } else {
@@ -32,10 +31,12 @@ public class StringsAndThings {
 
 
         //Part G
-        String after = animal.substring(index + 1);
+        String after = animal.substring(index +1 );
 
-        System.out.println("Expected Output");
-        System.out.println("Working Strings: " + "animal1 = " + animal1 + " " + "animal2 = " + animal2);
+
+        // Demo
+        System.out.println("Expected Results");
+        System.out.println("Working Strings: " + "animal1 = " + animal1 + "|" + "animal2 = " + animal2);
         System.out.println("Part A: " + first);
         System.out.println("Part B: " + last);
         System.out.println("Part C: " + average);

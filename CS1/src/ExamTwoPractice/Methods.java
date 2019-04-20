@@ -12,6 +12,7 @@ public class Methods {
         stringList.add(z);
         return stringList;
     }
+
     // Part B
     public static void interpretPrintCommand(int[] numbers, String command){
         if(command.equalsIgnoreCase("First")) {
@@ -22,12 +23,18 @@ public class Methods {
         }
         else {
             Scanner sc = new Scanner(command);
-            System.out.println(numbers[sc.nextInt()]);
+            //This takes in pure indices, remember arrays start from 0
+            System.out.println(numbers[sc.nextInt()]);    // To compensate for people who don't know
+                                                         // that arrays start from zero do sc.nextInt() -1
+                                                        // both sc.nextInt() and sc.nextInt()-1 should be right
         }
     }
+
+
+
     public static void main(String[] args) {
         //Part A Test
-        System.out.println("Expected Output For Part A");
+        System.out.println("Part A Demo ");
         System.out.println("----------------------------");
         System.out.println(littleList("Testing", "Testing", "123"));
         System.out.println("----------------------------");
