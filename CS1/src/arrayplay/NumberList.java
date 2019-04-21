@@ -20,8 +20,8 @@ public class NumberList {
             // ESTABLISH THE ARRAY OF NUMBERS
             readNumbers();
             // CHECK THE DATA
-            // System.out.println("\nThe original list of numbers ..."); 
-            // displayNumbers();
+            System.out.println("\nThe original list of numbers ...");
+            displayNumbers();
             // ENTER THE INTERPRETER
             interpreter();
         } catch (IOException ex) {
@@ -66,8 +66,13 @@ public class NumberList {
     }
 
     private static void displayNumbers() {
+        System.out.println("--------------");
+        System.out.print("Index #");
+        System.out.print(" Element");
+        System.out.println();
+        System.out.println("--------------");
         for (int x = 0; x < numberOfNumbers; x = x + 1) {
-            System.out.println(numbers[x]);
+            System.out.println( (x+1) + "      " + numbers[x]);
         }
     }
 

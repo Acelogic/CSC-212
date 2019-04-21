@@ -21,8 +21,8 @@ public class WordList {
             // ESTABLISH THE ARRAY OF Words
             readWords();
             // CHECK THE DATA
-            // System.out.println("\nThe original list of words ...");
-            // displayWords();
+            System.out.println("\nThe original list of words ...");
+            displayWords();
             // ENTER THE INTERPRETER
             interpreter();
         } catch (IOException ex) {
@@ -68,8 +68,13 @@ public class WordList {
     }
 
     private static void displayWords() {
+        System.out.println("--------------");
+        System.out.print("Index #");
+        System.out.print(" Element");
+        System.out.println();
+        System.out.println("--------------");
         for (int x = 0; x < numberOfWords; x = x + 1) {
-            System.out.println(words.get(x));
+            System.out.println( (x+1) + "      " + words.get(x));
         }
     }
 
