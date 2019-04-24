@@ -30,17 +30,17 @@ public class SuperficialSignatures {
         /* Part B
         while(dot.radius() > 0)
 
-        while($SPainter$.radius > $int$)
+        while($JFramelessPainter$.radius > $int$)
                                                         */
         /* Part C
         painter.setColor(colors.get(ccx));
 
-        $SPainter$.setColor($ArrayList$.get($int$));
+        $JFramelessPainter$.setColor($ArrayList$.get($int$));
                                                         */
         /* Part D
         painter.paint(dot);
 
-        $SPainter$.paint($SCircle$);
+        $JFramelessPainter$.paint($SCircle$);
                                                         */
         /* Part E
         dot.shrink(sf);

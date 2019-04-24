@@ -3,7 +3,7 @@
 * the chromesthetic processing of the pitch. A Pitch object will have five
 * properties:
 * - String name | ABC notation pitch name
-* - SPainter painter | the painting agent
+* - JFramelessPainter painter | the painting agent
 * - Note note | a note that will be set to the pitch corresponding to the
 121
 * ABC notation pitch name

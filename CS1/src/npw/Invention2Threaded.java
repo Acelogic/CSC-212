@@ -35,6 +35,7 @@ public class Invention2Threaded {
     public int height = image.getHeight();
     public int width = image.getWidth();
     public SPainter painter = new SPainter( "Threaded Invention 2", width, height );
+    public JFramelessPainter painter2 = new JFramelessPainter(painter);
     //Changing this stretches picture
     public double pixelSize = 1;
     public SRectangle rectanglePixel = new SRectangle( pixelSize, pixelSize );
@@ -42,7 +43,6 @@ public class Invention2Threaded {
     //----- Constructors  -----
     public Invention2Threaded() throws IOException {
         //paintTopRows();
-
         Thread top = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -58,6 +58,8 @@ public class Invention2Threaded {
             }
         });
         bottom.start();
+
+        //paintBottomRows();
     }
     //----- Methods / Functions  -----
 
@@ -72,7 +74,6 @@ public class Invention2Threaded {
         } );
 
         // Run Multiple Programs in parallel
-
         Thread thread1 = new Thread( new SpawnNewSession() );
         thread1.start();
 
@@ -136,6 +137,14 @@ public class Invention2Threaded {
         painter.paint( rectanglePixel );
     }
 
+    public void paintOnePixel2(int workingPixel, int workingRow) {
+        Color pixelColor = getPixelColor( workingPixel, workingRow );
+        painter2.setColor( pixelColor );
+        //Changing this may make pictures generate faster
+        painter2.mrt( 1 );
+        painter2.paint( rectanglePixel );
+    }
+
     public void paintOneRow(int workingRow) {
         int pixelIterator = 0;
         while (pixelIterator < image.getWidth()) {
@@ -171,7 +180,7 @@ public class Invention2Threaded {
     public void paintOneBottomRow(int workingRow) {
         int pixelIterator = 0;
         while (pixelIterator < image.getWidth()) {
-            paintOnePixel( pixelIterator, workingRow );
+            paintOnePixel2( pixelIterator, workingRow );
             pixelIterator = pixelIterator + 1;
             System.out.println( "Thread #:" + Thread.currentThread().getId() + "| DEBUG: Row Pixel Count:  " + pixelIterator );
         }
@@ -181,7 +190,7 @@ public class Invention2Threaded {
         System.out.println("Paint Bottom Rows");
         int rowCount = 0;
         // Starts Off at Bottom Corner
-        painter.moveTo( new Point2D.Double( 0, height ) );
+        painter2.moveTo( new Point2D.Double( 0, -height ) );
         int rowIterator = -1+height; // -1 to make getPixelColor Happy
         int rowMover = 3; // 3 offset to compensate for gap and over draw
         while( rowIterator > image.getHeight() / 2) {
@@ -191,7 +200,7 @@ public class Invention2Threaded {
             rowCount = rowCount + 1;
             System.out.println( "Thread #:" + Thread.currentThread().getId() + "| DEBUG: Row Count:  " + rowCount );
             // Makes a new Row
-            painter.moveTo( new Point2D.Double( 0, height - rowMover));
+            painter2.moveTo( new Point2D.Double( 0, -height - rowMover));
             System.out.println( "-------------------------------------------------" );
             System.out.println( "Thread #: " + Thread.currentThread().getId() + "| DEBUG: NEXT ROW" );
             System.out.println( "-------------------------------------------------" );
