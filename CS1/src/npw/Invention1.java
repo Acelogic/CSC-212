@@ -46,7 +46,6 @@ public class Invention1 {
             }
         } );
     }
-
     //Make Program Compatible With Windows (I use windows :P )
     private BufferedImage getImageFromPath() throws IOException {
         JFileChooser chooser = new JFileChooser();
@@ -62,32 +61,32 @@ public class Invention1 {
     }
 
     private Color getPixelColor(int x, int y) {
-        int rgb = image.getRGB( x, y );
-        int red = (rgb & 0x00ff0000) >> 16;
-        int green = (rgb & 0x0000ff00) >> 8;
-        int blue = (rgb & 0x000000ff);
+        // Usage of bit-shift operators to extract the color from the 32bit integer .getRGB returns
+        int colorINT_32 = image.getRGB( x, y );
+        int red = (colorINT_32 & 0x00ff0000) >> 16;
+        int green = (colorINT_32 & 0x0000ff00) >> 8;
+        int blue = (colorINT_32 & 0x000000ff);
         Color PixelColor = new Color( red, green, blue );
         return PixelColor;
     }
     private void paintOnePixel(int workingPixel, int workingRow) throws IOException {
         Color pixelColor = getPixelColor( workingPixel, workingRow);
         painter.setColor( pixelColor );
-        //Changing this may make pictures generate faster
-        painter.mrt( 1 );
-
         // Randomly use a square or circle as a pixel
         Random rgen = new Random();
         int randomNum = rgen.nextInt( 1 );
         if (randomNum == 1) {
-            painter.paint( squarePixel );
+            painter.mrt(squarePixel.side());
+            painter.paint(squarePixel);
         } else {
-            painter.paint( circlePixel );
+            painter.mrt(circlePixel.radius());
+            painter.paint(circlePixel);
         }
     }
     private void paintOneRow(int workingRow) throws IOException {
         int pixelIterator = 0;
         while (pixelIterator < image.getWidth()) {
-            paintOnePixel( pixelIterator, workingRow);
+            paintOnePixel(pixelIterator, workingRow);
             pixelIterator = pixelIterator +1;
         }
     }

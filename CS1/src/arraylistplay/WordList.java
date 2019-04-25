@@ -6,6 +6,7 @@ package arraylistplay;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -134,6 +135,7 @@ public class WordList {
         int position1 = commandReader.nextInt() -1; // subtraction of 1 so we won't have to use "exact" values as index input
         int position2 = commandReader.nextInt() -1;
         words.set(position1, words.set(position2 , words.get(position1))); // swapping is here  (no Java.Util.Collections.swap needed)
+        //Collections.swap(words, position1,position2); // Not going to be that guy
     }
 
     private static void interpretAddCommand() {
