@@ -10,8 +10,8 @@ public class Methods {
 
         ArrayList<String> all = new ArrayList<>();
 
-        for(int i =0; i < paramArrayList.size() -1; i++) {
-            all.add(paramArrayList.get(i));
+        for(String element : paramArrayList) {
+            all.add(element);
         }
 
         all.add(paramString1);

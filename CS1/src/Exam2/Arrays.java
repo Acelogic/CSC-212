@@ -19,10 +19,11 @@ public class Arrays {
 
         //Part D
         int i = 0;
-        while( i < rect.length -1) {
+        while( i < rect.length) {
             rect[i].expand(10,10);
             i = i+1;
         }
+
 
 
 

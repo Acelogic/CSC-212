@@ -1,6 +1,7 @@
 package balloonpeople;
 
 import painter.SPainter;
+import shapes.SCircle;
 
 import java.awt.*;
 
@@ -25,10 +26,20 @@ public class BalloonPerson {
     }
 
 
-    public void paint(SPainter paint) {
+    public void paint(SPainter painter) {
+        int headRadius = 100;
+
+        SCircle head = new SCircle(headRadius);
+        painter.setColor(balloonColor);
+        painter.paint(head);
+        head.shrink(headRadius / 2);
+        for (int i = 0; i < height/3; i++) {
+            painter.mbk(headRadius / 2);
+            painter.paint(head);
+           // System.out.println(i + " Loop Working");
+        }
 
     }
-
 }
 
 

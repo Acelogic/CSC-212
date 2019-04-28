@@ -11,7 +11,6 @@ public class Domino {
 
     }
 
-
     public void display() {
         System.out.print("[");
 
@@ -27,7 +26,6 @@ public class Domino {
 
         System.out.println("]");
     }
-
 
     public String toString() {
         return "[" + edge1 + " | " + edge2 + "]";

@@ -6,6 +6,10 @@ import java.util.ArrayList;
 public class ArrayLists {
     public static void main(String[] args) {
         ArrayList<Die> dice = new ArrayList<>();
+        dice.add(new Die());
+        dice.add(new Die());
+        dice.add(new Die());
+        dice.add(new Die());
 
 
         //Part A
@@ -18,11 +22,17 @@ public class ArrayLists {
         ArrayList<Die> sixes = new ArrayList<>();
 
         //Part D
-        for (int i = 0; i < dice.size() - 1; i++) {
-            if(dice.get(i).top() == 6) {
-            sixes.add(dice.get(i));
+        for (Die element: dice) {
+            if(element.top() == 6) {
+            sixes.add(element);
             }
+        }
+        // OR
+        for (int i = 0; i < dice.size(); i++) {
+            if(dice.get(i).top() == 6) {
+                sixes.add(dice.get(i));
 
+            }
         }
     }
 }
