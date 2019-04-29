@@ -24,7 +24,7 @@ public class Domino {
             System.out.print("*");
         }
 
-        System.out.println("]");
+        System.out.print("]");
     }
 
     public String toString() {
