@@ -14,6 +14,11 @@ public class Methods {
             all.add(element);
         }
 
+        /*for(int i = 0; i <paramArrayList.size();i++) {    Alternative way of doing the same thing
+               all.add(paramArrayList.get(i));
+
+        }*/
+
         all.add(paramString1);
         all.add(paramString2);
         return all;

@@ -18,7 +18,7 @@ public class StringAndThings {
         String ampm = startTime.substring(space + 1);
 
         //Part E
-        boolean earlyClass = hour.equals("9") | hour.equals("9");
+        boolean earlyClass = hour.equals("8") | hour.equals("9");
 
         //Part F
         boolean eightAM = hour.equals("8") | ampm.equals("AM");
