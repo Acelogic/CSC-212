@@ -21,7 +21,7 @@ public class StringAndThings {
         boolean earlyClass = hour.equals("8") | hour.equals("9");
 
         //Part F
-        boolean eightAM = hour.equals("8") | ampm.equals("AM");
+        boolean eightAM = hour.equals("8") & ampm.equals("AM");
 
         //Part G
         if (ampm.equals("AM")) {
