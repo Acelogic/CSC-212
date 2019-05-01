@@ -111,17 +111,14 @@ public class StringThing {
 
     private static String firstName(String directoryStyleName) {
         String firstName = directoryStyleName.substring(2+directoryStyleName.indexOf(","));
-
         return firstName;
 
 
     }
 
     private static String lastName(String directoryStyleName) {
-
-       String lastName = directoryStyleName.substring(0, directoryStyleName.indexOf(","));
-
-        return lastName;
+        String lastName = directoryStyleName.substring(0, directoryStyleName.indexOf(","));
+       return lastName;
 
     }
 
