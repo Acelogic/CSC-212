@@ -1,20 +1,10 @@
-package algorithms;
+package algorithms.Sorting;
 
 import java.util.ArrayList;
 
 public class IntegerSelectionSortDemo {
     public static void main(String[] args) {
-        ArrayList<Integer> numberList = new ArrayList<>();
-        numberList.add(8);
-        numberList.add(54);
-        numberList.add(32);
-        numberList.add(9);
-        numberList.add(1);
-        numberList.add(3);
-        numberList.add(4);
-        numberList.add(-20);
-        numberList.add(23);
-        numberList.add(100);
+        ArrayList<Integer> numberList = generateNumbers(30);
 
         IntegerSelectionSort intSort = new IntegerSelectionSort(numberList);
         // Number List
@@ -23,11 +13,19 @@ public class IntegerSelectionSortDemo {
         System.out.println("Original List Size: " + numberList.size());
         System.out.println("Unsorted List: " + intSort.unsortedList());
         System.out.println("Max Value: " + intSort.maxValue());
-
         System.out.println("\033[1mSorted List: \033[31m" + intSort.sort());
 
 
 
 
     }
+    public static ArrayList<Integer> generateNumbers(int numberOfNumbers) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for (int i = 1; i <= numberOfNumbers; i++) {
+            Integer number = (int) (Math.random() * 90) + 10;
+            numbers.add(number);
+        }
+        return numbers;
+    }
+
 }

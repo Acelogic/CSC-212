@@ -38,9 +38,9 @@ public class SuperficialSignatures {
         $JFramelessPainter$.setColor($ArrayList$.get($int$));
                                                         */
         /* Part D
-        painter.paint(dot);
+        painter.paintPerson(dot);
 
-        $JFramelessPainter$.paint($SCircle$);
+        $JFramelessPainter$.paintPerson($SCircle$);
                                                         */
         /* Part E
         dot.shrink(sf);

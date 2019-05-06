@@ -1,5 +1,5 @@
 /*
- * A program to paint an abstract gradient in the vertical direction.
+ * A program to paintPerson an abstract gradient in the vertical direction.
  */
 
 package npw;

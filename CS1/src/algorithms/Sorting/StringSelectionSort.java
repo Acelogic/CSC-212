@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.Sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,11 +28,9 @@ public class StringSelectionSort {
 
     public String maxValue(int index1, int index2) {
         String currentMax = list.subList(index1, index2).get(0);
-
         System.out.println("First Max: " + currentMax);
-
-        for (int i = 1; i < list.subList(index1, index2 + 1).size(); i++) { // Magic
-            String maxCandidate = list.subList(index1, index2 + 1).get(i); // Magic
+        for (int i = 1; i < list.subList(index1, index2).size(); i++) {
+            String maxCandidate = list.subList(index1, index2).get(i);
             if (currentMax.length() < maxCandidate.length()) {
                 currentMax = maxCandidate;
                 System.out.println("Current Max: " + currentMax);
@@ -48,7 +46,7 @@ public class StringSelectionSort {
             System.out.println("--------------------------------------------");
             System.out.println("List Size: " + (list.size() - i));
             System.out.println("Sub List: " + list.subList(0, list.size() - i));
-            Collections.swap(list, list.indexOf(maxValue(0, list.size() - i)), list.size() - i);
+            Collections.swap(list, list.indexOf(maxValue(0, (list.size() - i) +1)), list.size() - i);
         }
         return list;
     }
