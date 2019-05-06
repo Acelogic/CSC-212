@@ -4,43 +4,85 @@ import painter.SPainter;
 import shapes.SCircle;
 
 import java.awt.*;
+import java.awt.geom.Point2D;
 
 public class BalloonPerson {
 
     private String name;
     private int age;
     private double height;
-    private Color balloonColor;
+    private double headSize = 100;
+    private SCircle baseCircle = new SCircle(headSize);
+    private Point2D.Double edge1;
+    private Point2D.Double edge2;
 
     public BalloonPerson(String name, int age, double height) {
         this.name = name;
         this.age = age;
         this.height = height;
-        // Color Class will extract the r,g,b components from the 32bit integer
-        balloonColor = new Color((int) (Math.random() * 0x1000000));
-
     }
 
+    public void setHeadSize(double headSize){
+        this.headSize = headSize;
+    }
+
+
     public String toString() {
-        return "Name:" + name + "Age:" + age + "Height: " + height;
+        return " Name: " + name + " Age: " + age + " Height: " + height + "\n";
     }
 
 
     public void paint(SPainter painter) {
-        int headRadius = 100;
 
-        SCircle head = new SCircle(headRadius);
-        painter.setColor(balloonColor);
-        painter.paint(head);
-        head.shrink(headRadius / 2);
-        for (int i = 0; i < height/3; i++) {
-            painter.mbk(headRadius / 2);
-            painter.paint(head);
-           // System.out.println(i + " Loop Working");
+        painter.setRandomColor();
+        painter.paint(baseCircle);
+
+        painter.mbk(baseCircle.diameter() + height);
+        baseCircle.shrink(headSize/1.5);
+        painter.paint(baseCircle);
+
+        //Right Circle
+        painter.mrt(baseCircle.diameter()*2);
+        painter.paint(baseCircle);
+        edge2 = painter.getPosition();
+
+
+
+        //Center Circle
+        painter.mlt(baseCircle.diameter() * 2);
+        painter.paint(baseCircle);
+
+        // Left Circle
+        painter.mlt(baseCircle.diameter() * 2);
+        painter.paint(baseCircle);
+        edge1 = painter.getPosition();
+
+
+
+        painter.mrt(baseCircle.diameter() * 2);
+        painter.mbk(baseCircle.diameter() * 2);
+        painter.paint(baseCircle);
+
+        painter.tl(300);
+        painter.mrt(baseCircle.diameter() * 2);
+        painter.paint(baseCircle);
+
+        painter.tr(300);
+        painter.mlt(baseCircle.diameter() * 2);
+        painter.paint(baseCircle);
         }
 
+
+    public double RightEdge(){
+        return edge2.x;
     }
+
+    public boolean isAtEdge(SPainter painter){
+        return edge2.x >= painter.canvasWidth();
+    }
+
 }
+
 
 
 
