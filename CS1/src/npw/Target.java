@@ -1,5 +1,5 @@
 /*
- * Program to paintPerson a Target
+ * Program to paint a Target
  * Painting World, npw.
  * Modified By Miguel Cruz | Lab 2
  */

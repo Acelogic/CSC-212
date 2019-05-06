@@ -1,9 +1,9 @@
 /*
- * This interpreter is intended to paintPerson different colored dots in a window.
+ * This interpreter is intended to paint different colored dots in a window.
  *
  * The commands that the interpreter can recognize and respond to are:
- * - BLUE: paintPerson a blue dot
- * - RED: paintPerson a red dot
+ * - BLUE: paint a blue dot
+ * - RED: paint a red dot
  * - HELP: show a list of the commands in a dialog message box
  * - EXIT: terminate the program
  */

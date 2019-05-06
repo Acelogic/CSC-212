@@ -1,5 +1,5 @@
 /*
- * A program to paintPerson an abstract gradient in the vertical direction.
+ * A program to paint an abstract gradient in the vertical direction.
  */
 
 package npw;
@@ -33,7 +33,7 @@ public class ColorfulAbstractGradient {
         SPainter painter = new SPainter("Colorful Abstract Gradient", width, height);
         SCircle dot = new SCircle(5);
 
-        // Move the painter to the upper left corner to get ready to paintPerson the gradient
+        // Move the painter to the upper left corner to get ready to paint the gradient
         painter.mfd(height/2);
         painter.tl(90);
         painter.mfd(width/2 - 10);

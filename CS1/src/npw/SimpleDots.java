@@ -33,7 +33,7 @@ public class SimpleDots {
         SPainter painter = new SPainter("SimpleDots", width, height);
         SCircle dot = new SCircle(5);
 
-        // Move the painter to the upper left corner to get ready to paintPerson the gradient
+        // Move the painter to the upper left corner to get ready to paint the gradient
         painter.mfd(height/2);
         painter.tl(90);
         painter.mfd(width/2 - 10);

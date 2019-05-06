@@ -1,5 +1,5 @@
 /*
- * Program to paintPerson a blue dot in the context of the Nonrepresentational
+ * Program to paint a blue dot in the context of the Nonrepresentational
  * Painting World, npw.
  * Modified By Miguel Cruz ] Lab 2
  */
