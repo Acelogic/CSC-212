@@ -45,25 +45,58 @@ public class Pitch {
     }
 
     private SNote createNoteForThisPitch(String abcPitchClassName) {
+        // TODO: Fix Musical Notes for new pitches
+
+
         SNote note = new SNote();
         if (abcPitchClassName.equals( "C" )) {
-// TODO: Fix Musical Notes for new pitches
         } else if (abcPitchClassName.equals( "C," )) {
             note.lp( 7 );
         } else if (abcPitchClassName.equals( "c" )) {
             note.rp( 7 );
+
         } else if (abcPitchClassName.equals( "D" )) {
             note.rp( 1 );
         } else if (abcPitchClassName.equals( "D," )) {
             note.lp( 6 );
         } else if (abcPitchClassName.equals( "d" )) {
             note.rp( 8 );
+
         } else if (abcPitchClassName.equals( "E" )) {
             note.rp( 2 );
         } else if (abcPitchClassName.equals( "E," )) {
             note.lp( 5 );
         } else if (abcPitchClassName.equals( "e" )) {
             note.rp( 9 );
+
+        } else if (abcPitchClassName.equals( "F" )) {
+            note.rp( 2 );
+        } else if (abcPitchClassName.equals( "F," )) {
+            note.lp( 5 );
+        } else if (abcPitchClassName.equals( "f" )) {
+            note.rp( 9 );
+
+        } else if (abcPitchClassName.equals( "G" )) {
+            note.rp( 2 );
+        } else if (abcPitchClassName.equals( "G," )) {
+            note.lp( 5 );
+        } else if (abcPitchClassName.equals( "g" )) {
+            note.rp( 9 );
+
+        } else if (abcPitchClassName.equals( "A" )) {
+            note.rp( 2 );
+        } else if (abcPitchClassName.equals( "A," )) {
+            note.lp( 5 );
+        } else if (abcPitchClassName.equals( "a" )) {
+            note.rp( 9 );
+
+        } else if (abcPitchClassName.equals( "B" )) {
+            note.rp( 2 );
+        } else if (abcPitchClassName.equals( "B," )) {
+            note.lp( 5 );
+        } else if (abcPitchClassName.equals( "b" )) {
+            note.rp( 9 );
+
         }
         return note;
     }
