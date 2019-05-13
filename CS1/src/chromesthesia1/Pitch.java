@@ -70,32 +70,32 @@ public class Pitch {
             note.rp( 9 );
 
         } else if (abcPitchClassName.equals( "F" )) {
-            note.rp( 2 );
+            note.rp( 3 );
         } else if (abcPitchClassName.equals( "F," )) {
-            note.lp( 5 );
+            note.lp( 4 );
         } else if (abcPitchClassName.equals( "f" )) {
-            note.rp( 9 );
+            note.rp( 10 );
 
         } else if (abcPitchClassName.equals( "G" )) {
-            note.rp( 2 );
+            note.rp( 4);
         } else if (abcPitchClassName.equals( "G," )) {
-            note.lp( 5 );
+            note.lp( 3 );
         } else if (abcPitchClassName.equals( "g" )) {
-            note.rp( 9 );
+            note.rp( 11 );
 
         } else if (abcPitchClassName.equals( "A" )) {
-            note.rp( 2 );
+            note.rp( 5 );
         } else if (abcPitchClassName.equals( "A," )) {
-            note.lp( 5 );
+            note.lp( 2 );
         } else if (abcPitchClassName.equals( "a" )) {
-            note.rp( 9 );
+            note.rp( 12 );
 
         } else if (abcPitchClassName.equals( "B" )) {
-            note.rp( 2 );
+            note.rp( 6 );
         } else if (abcPitchClassName.equals( "B," )) {
-            note.lp( 5 );
+            note.lp( 1);
         } else if (abcPitchClassName.equals( "b" )) {
-            note.rp( 9 );
+            note.rp( 13 );
 
         }
         return note;

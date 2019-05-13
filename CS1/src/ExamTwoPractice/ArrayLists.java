@@ -24,7 +24,9 @@ public class ArrayLists {
         String first = words.get(0);
 
         //Part C
-        String last = words.get(words.size() - 1);
+        String last = words.get(words.size() - 1); // words.size() returns the value of the arraylist
+                                                   // if you were to count starting from 1
+                                                   // the words.get() functions uses indices, that's why we have to use words.size() - 1
 
         //Part D ( in 3 Examples)
         // For Each Loop (The Most Easiest One TBH)
